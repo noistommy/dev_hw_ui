@@ -1,0 +1,1742 @@
+{
+  "data": [
+    {
+      "type": "organizations",
+      "id": "639",
+      "attributes": {
+        "name": "가비아",
+        "parent_node_id": 638,
+        "node_left": 2,
+        "node_right": 159,
+        "created-at": "2008-02-27"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/639/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/639/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/639"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "641",
+      "attributes": {
+        "name": "경영지원팀",
+        "parent_node_id": 639,
+        "node_left": 3,
+        "node_right": 22,
+        "created-at": "2010-01-05"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/641/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/641/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/641"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "642",
+      "attributes": {
+        "name": "인사IR유닛",
+        "parent_node_id": 641,
+        "node_left": 4,
+        "node_right": 5,
+        "created-at": "2010-01-05"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/642/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/642/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/642"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "644",
+      "attributes": {
+        "name": "재무회계유닛",
+        "parent_node_id": 641,
+        "node_left": 6,
+        "node_right": 7,
+        "created-at": "2010-01-05"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/644/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/644/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/644"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "718",
+      "attributes": {
+        "name": "구매총무유닛",
+        "parent_node_id": 641,
+        "node_left": 8,
+        "node_right": 9,
+        "created-at": "2010-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/718/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/718/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/718"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12473",
+      "attributes": {
+        "name": "보안정책유닛",
+        "parent_node_id": 641,
+        "node_left": 10,
+        "node_right": 11,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12473/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12473/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12473"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12546",
+      "attributes": {
+        "name": "인사IR유닛-기타",
+        "parent_node_id": 641,
+        "node_left": 12,
+        "node_right": 21,
+        "created-at": "2021-05-06"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12546/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12546/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12546"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12547",
+      "attributes": {
+        "name": "수습",
+        "parent_node_id": 12546,
+        "node_left": 13,
+        "node_right": 14,
+        "created-at": "2021-05-06"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12547/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12547/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12547"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12545",
+      "attributes": {
+        "name": "인턴",
+        "parent_node_id": 12546,
+        "node_left": 15,
+        "node_right": 16,
+        "created-at": "2021-04-30"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12545/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12545/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12545"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12543",
+      "attributes": {
+        "name": "휴직",
+        "parent_node_id": 12546,
+        "node_left": 17,
+        "node_right": 18,
+        "created-at": "2021-04-30"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12543/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12543/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12543"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12544",
+      "attributes": {
+        "name": "관계사",
+        "parent_node_id": 12546,
+        "node_left": 19,
+        "node_right": 20,
+        "created-at": "2021-04-30"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12544/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12544/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12544"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12413",
+      "attributes": {
+        "name": "마케팅팀",
+        "parent_node_id": 639,
+        "node_left": 23,
+        "node_right": 30,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12413/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12413/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12413"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12459",
+      "attributes": {
+        "name": "콘텐츠유닛",
+        "parent_node_id": 12413,
+        "node_left": 24,
+        "node_right": 25,
+        "created-at": "2018-07-24"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12459/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12459/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12459"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12422",
+      "attributes": {
+        "name": "사이트기획유닛",
+        "parent_node_id": 12413,
+        "node_left": 26,
+        "node_right": 27,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12422/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12422/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12422"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12515",
+      "attributes": {
+        "name": "영상유닛",
+        "parent_node_id": 12413,
+        "node_left": 28,
+        "node_right": 29,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12515/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12515/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12515"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12423",
+      "attributes": {
+        "name": "상품결제팀",
+        "parent_node_id": 639,
+        "node_left": 31,
+        "node_right": 32,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12423/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12423/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12423"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "11372",
+      "attributes": {
+        "name": "프론트엔드개발팀",
+        "parent_node_id": 639,
+        "node_left": 33,
+        "node_right": 36,
+        "created-at": "2016-01-29"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11372/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11372/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11372"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12507",
+      "attributes": {
+        "name": "하이웍스UI개발유닛",
+        "parent_node_id": 11372,
+        "node_left": 34,
+        "node_right": 35,
+        "created-at": "2020-09-03"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12507/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12507/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12507"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "808",
+      "attributes": {
+        "name": "디자인팀",
+        "parent_node_id": 639,
+        "node_left": 37,
+        "node_right": 44,
+        "created-at": "2012-05-30"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/808/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/808/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/808"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12410",
+      "attributes": {
+        "name": "서비스디자인1유닛",
+        "parent_node_id": 808,
+        "node_left": 38,
+        "node_right": 39,
+        "created-at": "2017-09-07"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12410/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12410/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12410"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12480",
+      "attributes": {
+        "name": "서비스디자인2유닛",
+        "parent_node_id": 808,
+        "node_left": 40,
+        "node_right": 41,
+        "created-at": "2019-04-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12480/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12480/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12480"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12411",
+      "attributes": {
+        "name": "그룹웨어디자인유닛",
+        "parent_node_id": 808,
+        "node_left": 42,
+        "node_right": 43,
+        "created-at": "2017-09-07"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12411/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12411/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12411"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12412",
+      "attributes": {
+        "name": "도메인사업팀",
+        "parent_node_id": 639,
+        "node_left": 45,
+        "node_right": 50,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12412/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12412/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12412"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12417",
+      "attributes": {
+        "name": "도메인기획유닛",
+        "parent_node_id": 12412,
+        "node_left": 46,
+        "node_right": 47,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12417/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12417/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12417"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12418",
+      "attributes": {
+        "name": "도메인개발유닛",
+        "parent_node_id": 12412,
+        "node_left": 48,
+        "node_right": 49,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12418/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12418/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12418"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12446",
+      "attributes": {
+        "name": "솔루션개발팀",
+        "parent_node_id": 639,
+        "node_left": 51,
+        "node_right": 52,
+        "created-at": "2018-07-10"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12446/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12446/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12446"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12430",
+      "attributes": {
+        "name": "하이웍스기획팀",
+        "parent_node_id": 639,
+        "node_left": 53,
+        "node_right": 54,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12430/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12430/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12430"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12415",
+      "attributes": {
+        "name": "하이웍스개발팀",
+        "parent_node_id": 639,
+        "node_left": 55,
+        "node_right": 60,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12415/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12415/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12415"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12517",
+      "attributes": {
+        "name": "그룹웨어개발유닛",
+        "parent_node_id": 12415,
+        "node_left": 56,
+        "node_right": 57,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12517/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12517/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12517"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12518",
+      "attributes": {
+        "name": "상품개발유닛",
+        "parent_node_id": 12415,
+        "node_left": 58,
+        "node_right": 59,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12518/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12518/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12518"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12519",
+      "attributes": {
+        "name": "메일개발팀",
+        "parent_node_id": 639,
+        "node_left": 61,
+        "node_right": 62,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12519/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12519/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12519"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12474",
+      "attributes": {
+        "name": "그룹플랫폼팀",
+        "parent_node_id": 639,
+        "node_left": 63,
+        "node_right": 64,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12474/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12474/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12474"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12414",
+      "attributes": {
+        "name": "플랫폼팀",
+        "parent_node_id": 639,
+        "node_left": 65,
+        "node_right": 70,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12414/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12414/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12414"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12426",
+      "attributes": {
+        "name": "개발유닛",
+        "parent_node_id": 12414,
+        "node_left": 66,
+        "node_right": 67,
+        "created-at": "2017-09-15"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12426/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12426/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12426"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12485",
+      "attributes": {
+        "name": "기술유닛",
+        "parent_node_id": 12414,
+        "node_left": 68,
+        "node_right": 69,
+        "created-at": "2019-07-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12485/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12485/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12485"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12461",
+      "attributes": {
+        "name": "개발운영팀",
+        "parent_node_id": 639,
+        "node_left": 71,
+        "node_right": 80,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12461/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12461/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12461"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12448",
+      "attributes": {
+        "name": "인프라1유닛",
+        "parent_node_id": 12461,
+        "node_left": 72,
+        "node_right": 73,
+        "created-at": "2018-07-10"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12448/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12448/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12448"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12520",
+      "attributes": {
+        "name": "인프라2유닛",
+        "parent_node_id": 12461,
+        "node_left": 74,
+        "node_right": 75,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12520/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12520/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12520"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12462",
+      "attributes": {
+        "name": "시스템개발유닛",
+        "parent_node_id": 12461,
+        "node_left": 76,
+        "node_right": 77,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12462/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12462/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12462"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12499",
+      "attributes": {
+        "name": "애플리케이션개발유닛",
+        "parent_node_id": 12461,
+        "node_left": 78,
+        "node_right": 79,
+        "created-at": "2020-01-07"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12499/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12499/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12499"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12130",
+      "attributes": {
+        "name": "g클라우드개발팀",
+        "parent_node_id": 639,
+        "node_left": 81,
+        "node_right": 94,
+        "created-at": "2016-11-04"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12130/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12130/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12130"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12133",
+      "attributes": {
+        "name": "클라우드기술유닛",
+        "parent_node_id": 12130,
+        "node_left": 82,
+        "node_right": 87,
+        "created-at": "2016-11-04"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12133/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12133/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12133"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12528",
+      "attributes": {
+        "name": "기술1파트",
+        "parent_node_id": 12133,
+        "node_left": 83,
+        "node_right": 84,
+        "created-at": "2021-02-08"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12528/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12528/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12528"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12529",
+      "attributes": {
+        "name": "기술2파트",
+        "parent_node_id": 12133,
+        "node_left": 85,
+        "node_right": 86,
+        "created-at": "2021-02-08"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12529/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12529/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12529"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12136",
+      "attributes": {
+        "name": "클라우드서비스개발유닛",
+        "parent_node_id": 12130,
+        "node_left": 88,
+        "node_right": 89,
+        "created-at": "2016-11-04"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12136/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12136/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12136"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12137",
+      "attributes": {
+        "name": "클라우드시스템개발유닛",
+        "parent_node_id": 12130,
+        "node_left": 90,
+        "node_right": 91,
+        "created-at": "2016-11-04"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12137/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12137/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12137"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12501",
+      "attributes": {
+        "name": "클라우드기획유닛",
+        "parent_node_id": 12130,
+        "node_left": 92,
+        "node_right": 93,
+        "created-at": "2020-01-07"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12501/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12501/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12501"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "758",
+      "attributes": {
+        "name": "클라우드IDC사업팀",
+        "parent_node_id": 639,
+        "node_left": 95,
+        "node_right": 112,
+        "created-at": "2012-01-26"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/758/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/758/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/758"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12471",
+      "attributes": {
+        "name": "사업1유닛",
+        "parent_node_id": 758,
+        "node_left": 96,
+        "node_right": 97,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12471/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12471/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12471"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12470",
+      "attributes": {
+        "name": "사업2유닛",
+        "parent_node_id": 758,
+        "node_left": 98,
+        "node_right": 99,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12470/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12470/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12470"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12406",
+      "attributes": {
+        "name": "영업1유닛",
+        "parent_node_id": 758,
+        "node_left": 100,
+        "node_right": 101,
+        "created-at": "2017-07-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12406/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12406/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12406"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12496",
+      "attributes": {
+        "name": "영업2유닛",
+        "parent_node_id": 758,
+        "node_left": 102,
+        "node_right": 103,
+        "created-at": "2019-11-05"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12496/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12496/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12496"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12487",
+      "attributes": {
+        "name": "영업3유닛",
+        "parent_node_id": 758,
+        "node_left": 104,
+        "node_right": 105,
+        "created-at": "2019-07-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12487/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12487/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12487"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12521",
+      "attributes": {
+        "name": "영업4유닛",
+        "parent_node_id": 758,
+        "node_left": 106,
+        "node_right": 107,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12521/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12521/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12521"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "11243",
+      "attributes": {
+        "name": "컨설팅유닛",
+        "parent_node_id": 758,
+        "node_left": 108,
+        "node_right": 109,
+        "created-at": "2014-01-14"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11243/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11243/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11243"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12494",
+      "attributes": {
+        "name": "기술유닛",
+        "parent_node_id": 758,
+        "node_left": 110,
+        "node_right": 111,
+        "created-at": "2019-07-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12494/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12494/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12494"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "756",
+      "attributes": {
+        "name": "서비스솔루션팀",
+        "parent_node_id": 639,
+        "node_left": 113,
+        "node_right": 128,
+        "created-at": "2012-01-26"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/756/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/756/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/756"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12439",
+      "attributes": {
+        "name": "신규컨설팅유닛",
+        "parent_node_id": 756,
+        "node_left": 114,
+        "node_right": 115,
+        "created-at": "2018-03-30"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12439/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12439/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12439"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "11211",
+      "attributes": {
+        "name": "관리대행유닛",
+        "parent_node_id": 756,
+        "node_left": 116,
+        "node_right": 117,
+        "created-at": "2013-12-17"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11211/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11211/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11211"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12533",
+      "attributes": {
+        "name": "서비스관리1유닛",
+        "parent_node_id": 756,
+        "node_left": 118,
+        "node_right": 119,
+        "created-at": "2021-04-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12533/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12533/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12533"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12534",
+      "attributes": {
+        "name": "서비스관리2유닛",
+        "parent_node_id": 756,
+        "node_left": 120,
+        "node_right": 125,
+        "created-at": "2021-04-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12534/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12534/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12534"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12535",
+      "attributes": {
+        "name": "관리1파트",
+        "parent_node_id": 12534,
+        "node_left": 121,
+        "node_right": 122,
+        "created-at": "2021-04-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12535/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12535/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12535"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12536",
+      "attributes": {
+        "name": "관리2파트",
+        "parent_node_id": 12534,
+        "node_left": 123,
+        "node_right": 124,
+        "created-at": "2021-04-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12536/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12536/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12536"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "11317",
+      "attributes": {
+        "name": "회원결제유닛",
+        "parent_node_id": 756,
+        "node_left": 126,
+        "node_right": 127,
+        "created-at": "2015-01-09"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11317/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11317/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11317"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "755",
+      "attributes": {
+        "name": "보안IDC운영팀",
+        "parent_node_id": 639,
+        "node_left": 129,
+        "node_right": 154,
+        "created-at": "2012-01-26"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/755/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/755/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/755"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12491",
+      "attributes": {
+        "name": "보안컨설팅서비스유닛",
+        "parent_node_id": 755,
+        "node_left": 130,
+        "node_right": 131,
+        "created-at": "2019-07-01"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12491/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12491/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12491"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "850",
+      "attributes": {
+        "name": "보안관제서비스유닛",
+        "parent_node_id": 755,
+        "node_left": 132,
+        "node_right": 139,
+        "created-at": "2013-04-23"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/850/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/850/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/850"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12522",
+      "attributes": {
+        "name": "원격관제파트",
+        "parent_node_id": 850,
+        "node_left": 133,
+        "node_right": 134,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12522/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12522/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12522"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12550",
+      "attributes": {
+        "name": "취약점진단파트",
+        "parent_node_id": 850,
+        "node_left": 135,
+        "node_right": 136,
+        "created-at": "2021-06-21"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12550/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12550/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12550"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12551",
+      "attributes": {
+        "name": "파견관제지원파트",
+        "parent_node_id": 850,
+        "node_left": 137,
+        "node_right": 138,
+        "created-at": "2021-06-21"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12551/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12551/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12551"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12553",
+      "attributes": {
+        "name": "클라우드보안서비스유닛",
+        "parent_node_id": 755,
+        "node_left": 140,
+        "node_right": 145,
+        "created-at": "2021-06-21"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12553/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12553/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12553"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12554",
+      "attributes": {
+        "name": "클라우드지원파트",
+        "parent_node_id": 12553,
+        "node_left": 141,
+        "node_right": 142,
+        "created-at": "2021-06-21"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12554/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12554/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12554"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12555",
+      "attributes": {
+        "name": "gabia지원파트",
+        "parent_node_id": 12553,
+        "node_left": 143,
+        "node_right": 144,
+        "created-at": "2021-06-21"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12555/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12555/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12555"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "11240",
+      "attributes": {
+        "name": "Network운영유닛",
+        "parent_node_id": 755,
+        "node_left": 146,
+        "node_right": 147,
+        "created-at": "2014-01-14"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11240/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11240/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11240"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "11331",
+      "attributes": {
+        "name": "IDC운영유닛",
+        "parent_node_id": 755,
+        "node_left": 148,
+        "node_right": 153,
+        "created-at": "2015-04-02"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11331/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11331/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/11331"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12525",
+      "attributes": {
+        "name": "IDC운영파트",
+        "parent_node_id": 11331,
+        "node_left": 149,
+        "node_right": 150,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12525/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12525/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12525"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12526",
+      "attributes": {
+        "name": "부가서비스운영파트",
+        "parent_node_id": 11331,
+        "node_left": 151,
+        "node_right": 152,
+        "created-at": "2021-01-11"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12526/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12526/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12526"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "846",
+      "attributes": {
+        "name": "정보보안팀",
+        "parent_node_id": 639,
+        "node_left": 155,
+        "node_right": 158,
+        "created-at": "2013-03-05"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/846/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/846/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/846"
+      }
+    },
+    {
+      "type": "organizations",
+      "id": "12472",
+      "attributes": {
+        "name": "보안분석유닛",
+        "parent_node_id": 846,
+        "node_left": 156,
+        "node_right": 157,
+        "created-at": "2018-12-31"
+      },
+      "relationships": {
+        "members": {
+          "links": {
+            "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12472/relationships/members",
+            "related": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12472/members"
+          }
+        }
+      },
+      "links": {
+        "self": "https://organization-api.gabiaoffice.hiworks.com/v3/organizations/12472"
+      }
+    }
+  ]
+}

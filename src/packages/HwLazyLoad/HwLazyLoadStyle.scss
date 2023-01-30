@@ -1,0 +1,11 @@
+.hw-lazy-element{
+    min-width: 500px;
+    min-height: 300px;
+    background-color: #ccc;
+    border-radius: 2px;
+    display: block;
+    &.lazy-element--loaded{
+        min-width: auto;
+        min-height: auto;
+    }
+}

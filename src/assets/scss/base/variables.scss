@@ -1,0 +1,128 @@
+$white: #FFFFFF;
+$black: #333333;
+
+@function relativePx($number) {
+  @return ($number/14)+em
+}
+@function absolutePx($number) {
+  @return ($number/14)+rem
+}
+
+// ----------------------------
+//         Fonts 
+// ----------------------------
+
+//$fontName: 'MalgunGothic';
+
+
+//font family
+$fontName: 'Spoqa Han Sans';
+$fontSmoothing: antialiased;
+
+$fontWeight: 400;
+$baseColor: $black;
+
+$pageFont: $fontName, 'Helvetica Neue', '돋움', sans-serif;
+
+//font weight
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-bold: 900;
+
+$lineHeight: 1.5;
+
+// font size
+$fontSize: 14px;
+
+$emSize: 14px;
+
+// ----------------------------
+//         Brand Color 
+// ----------------------------
+
+
+$primary-color: #454545;
+$primary-color-hover: darken($primary-color, 5);
+$pale-blue: #66b1ff;
+$secondary-color: #ebebeb;
+$secondary-color-hover: #d6d6d6;
+$info-color: #909090;
+$info-color-hover: #575757;
+$warning-color: #ea6923;
+$warning-color-hover: #da5a15;
+$danger-color: #C70909;
+$danger-color-hover: #ff010e;
+$yellow-color: #fdc036;
+$dark-primary-color: #77bdff;
+$dark-bg-color: #505050;
+$dark-border-color: #5E5E5E;
+
+$baseBorderColor: #D6D6D6;
+$baseBorderRadius: 4px;
+
+// ----------------------------
+//         size(GROUP)
+// ----------------------------
+
+//$tiny-size: 0.5em;
+//$small-size: 0.75em;
+//$normal-size: 1em;
+//$large-size: 1.25em;
+//$huge-size: 1.5em;
+
+$tinySize: (10 / 14);
+$smallSize: (12 / 14);
+$mediumSize: (14 / 14);
+$largeSize: (18 / 14);
+$hugeSize: (20 / 14);
+$massiveSize: (24 / 14);
+
+// ----------------------------
+//         Heading
+// ----------------------------
+
+
+$headerFontWeight: $bold;
+$h1: absolutePx(28);
+$h2: absolutePx(24);
+$h3: absolutePx(18);
+$h4: absolutePx(16);
+$h5: absolutePx(14);
+
+
+// ----------------------------
+//         Group Color(GROUP)
+// ----------------------------
+
+$accent: #2985DB;
+$secondary-variant: #909090;
+$background1: #FFFFFF;
+$background2: #F8F8F8;
+$surface1: #EBEBEB;
+$surface2: #EFF4FC;
+
+$text-light: #FFFFFF;
+$text-dark: #333333;
+
+$gray-dark: #676767;
+$gray: #909090;
+$gray-light: #C4C4C4;
+
+$text-disabled: $gray-light;
+
+$text-error: #D50000;
+$text-attention: #EC6E00;
+
+$background: $white;
+
+// ----------------------------
+//         Issue Color(GROUP)
+// ----------------------------
+
+@import './issueColor';

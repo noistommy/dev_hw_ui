@@ -1,0 +1,133 @@
+@function relativePx($number) {
+  @return ($number/14)+em
+}
+@function absolutePx($number) {
+  @return ($number/14)+rem
+}
+
+
+//font family
+$fontName: 'MalgunGothic';
+$fontSmoothing: antialiased;
+//font weight
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-bold: 900;
+
+$lineHeight: (18 / 14);
+
+//letter spacing
+$widerSpacing: 1px;
+$wideSpacing: 0.5px;
+$baseSpacing: normal;
+$narrowSpacing: -0.5px;
+$narrowerSpacing: -1px;
+
+$borderColor: #D6D6D6;
+$borderDarkColor: darken($borderColor, 27.4);
+$background: #F2F2F2;
+
+//#definitions
+$white: #ffffff;
+$primary: #2985db;
+$primary1: #f7741e;
+$secondary: #EBEBEB;
+
+$surface: #EFF4FC;
+
+$black: #333333;
+$gray: #909090;
+
+$lightGray: lighten($gray, 16.1); //#C4C4C4
+$darkGray: lighten($black, 20.4); //#676767
+
+$darkPrimary: darken(saturate($primary, 23.9), 10.6); //#056AC9
+$darkSecondary: darken($secondary, 35.7); //#909090
+$darkerPrimary: darken(saturate($primary, 28.8), 20.8); //#004F9A
+$darkerSecondary: darken($secondary, 58.1); //#575757
+
+$darkPrimary1: darken(saturate($primary1, 23.9), 10.6); //#056AC9
+$darkerPrimary1: darken(saturate($primary1, 28.8), 20.8); //#004F9A
+
+$surface1: #F8F8F8;
+$surface2: #EFF4FC;
+$surface3: #DAE8F8;
+
+$background1: $white;
+
+
+
+$issue_red: #D75757;
+$issue_orange: #EE9033;
+$issue_yellow: #F8B825;
+$issue_lightgreen: #B3BC40;
+$issue_green: #61A475;
+$issue_lightblue: #8CC5CE;
+$issue_blue: #70A3CA;
+$issue_deep_blue: #5178AF;
+$issue_deep_purple: #9180B4;
+$issue_purple: #AF77C0;
+$issue_brown: #A86A82;
+$issue_gray: #8B8B8B;
+
+$danger: #BE5858;
+$dangerDark: #A73030;
+$error: #D50000;
+$attention: #EC6E00;
+$importance: #FDC036;
+
+
+$headerFontWeight: $bold;
+$h1: absolutePx(22);
+$h2: absolutePx(20);
+$h3: absolutePx(18);
+$h4: absolutePx(16);
+$h5: absolutePx(14);
+
+//Size
+$tinySize: (10 / 14);
+$smallSize: (13 / 14);
+$normalSize: (14 / 14);
+$mediumSize: (16 / 14);
+$largeSize: (18 / 14);
+$hugeSize: (20 / 14);
+$massiveSize: (24 / 14);
+
+//$tiny-size: 0.5em;
+//$small-size: 0.75em;
+//$normal-size: 1em;
+//$large-size: 1.25em;
+//$huge-size: 1.5em;
+
+
+// Scroll Bars
+
+$useCustomScrollbars: true;
+
+$customScrollbarWidth: 8px;
+$customScrollbarHeight: 8px;
+
+$trackBackground: rgba(0, 0, 0, 0);
+$trackBorderRadius: 0px;
+
+$thumbBorderRadius: 4px;
+$thumbBackground: rgba(0, 0, 0, 0.25);
+$thumbTransition: color 0.2s ease;
+$thumbBorderWidth: 0px;
+$thumbBorderColor: $background;
+
+$thumbInactiveBackground: rgba(0, 0, 0, 0.15);
+$thumbHoverBackground: rgba(128, 135, 139, 0.8);
+
+/* Inverted */
+$trackInvertedBackground: rgba(255, 255, 255, 0.1);
+$thumbInvertedBackground: rgba(255, 255, 255, 0.25);
+$thumbInvertedInactiveBackground: rgba(255, 255, 255, 0.15);
+$thumbInvertedHoverBackground: rgba(255, 255, 255, 0.35);
+

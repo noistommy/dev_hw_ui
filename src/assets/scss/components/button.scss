@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import './variables.scss';
+
+.hw-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  //box-sizing: border-box;
+  outline: none;
+  color: $black;
+  //padding: 0.571em 1.571em;
+  // fontSize: 14px 일때 약 6px 24px
+  padding: 0.428em 1.571em;
+  border-radius: 4px;
+
+  //hover & focus
+  &.hover, &.focus,
+  &:hover, &:focus {
+    background: #ebebeb;
+    border-color: #ebebeb;
+    outline: none;
+  }
+
+  //disabled
+  &.disabled,
+  &[disabled], &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &.icon {
+    min-width: 1em;
+    min-height: 1em;
+    padding: 0.5em;
+    i {
+      margin:0;
+      width: 1em;
+      height: 1em;
+    }
+    img {
+      margin:0;
+    }
+    &.circle {
+      border-radius: 50%;
+    }
+    &:active {
+      color: #575757;
+    }
+  }
+  &.fluid {
+    width: 100%;
+  }
+  &.withIcon {
+    &.left {
+      i {margin-right: 0.8em;
+        font-size: 0.8em;}
+    }
+    &.right {
+      flex-direction: row-reverse;
+      i {margin-left: 0.8em; font-size: 0.8em;}
+    }
+  }
+  &.outline {
+    background-color: transparent;
+    color: $baseColor;
+    border:1px solid $baseBorderColor;
+    &:hover {
+      background-color: #F6F6F6;
+    }
+  }
+  &.angled {
+    border-radius: 0;
+  }
+  &.compact {
+    padding: 4px 10px;
+  }
+  i {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+  }
+  span, .label, span.label {
+    vertical-align: middle;
+  }
+  //&.selected {
+  //  color: $primary-color;
+  //}
+  &.badge {
+    .hw-badge {
+      position: relative;
+      margin-left: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      text-align: center;
+      min-width: 16px;
+      min-height: 16px;
+      line-height: 1;
+      padding: 4px 6px;
+      border-radius: 10px;
+    }
+  }
+
+
+  //icon
+  .icon {
+    //display: inline-block;
+    font-size: 1em;
+    margin-right: 0.5em;
+    //margin-top: 1px;
+    //line-height: 1.15;
+    //vertical-align: middle;
+    &.fa-signal-3 {
+      margin-bottom: 5px;
+    }
+  }
+
+  > .label + .icon {
+    margin-left: 0.5em;
+    margin-right: 0;
+  }
+
+  //이웃하는 버튼 간격
+  & + .hw-button {
+    margin-left: 14px;
+  }
+
+  //primary
+  &.primary {
+    @include colorVariant($primary-color, $primary-color-hover, #fff);
+  }
+
+  //secondary
+  &.secondary {
+    @include colorVariant($secondary-color, $secondary-color-hover, #333);
+  }
+
+  //info
+  &.info {
+    @include colorVariant($info-color, $info-color-hover, #fff);
+  }
+
+  &.danger {
+    @include colorVariant(#A73030, $danger-color, #fff);
+  }
+
+
+  //text
+  &.text {
+    padding: 0;
+    background: transparent;
+    border: none;
+    &:hover,
+    &:focus {
+      color: $pale-blue;
+    }
+    &[disabled],
+    &:disabled {
+      &:hover {
+      //  color: $primary-color;
+        background: transparent;
+        border-color: transparent;
+        opacity: 0.5;
+      }
+    }
+    &.readOnly {
+      color: $baseColor;
+      pointer-events: none;
+      &:hover {
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &.sm {
+    padding: 0 0.8em;
+    //min-height: 30px;
+    //height: 30px;
+    font-size: 0.8em;
+    .label {
+      line-height: 28px;
+    }
+  }
+
+}
+
+//color variation
+@mixin colorVariant($bgColor, $bgHoverColor, $color) {
+  background-color: $bgColor;
+  border-color: $bgHoverColor;
+  color: $color;
+  &:hover,
+  &:focus {
+    background-color: $bgHoverColor;
+    border-color: $bgHoverColor;
+  }
+  &[disabled],
+  &:disabled {
+    &:hover {
+      color: $color;
+      background-color: $bgColor;
+      border-color: $bgHoverColor;
+    }
+  }
+}

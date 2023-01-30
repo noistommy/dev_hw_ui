@@ -1,0 +1,95 @@
+.hw-popover-container{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ebeef5;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.16);
+  .hw-popover-arrow,
+  .hw-popover-arrow::after{
+    position: absolute;
+    border-color: transparent;
+    border-width: 6px;
+    border-style: solid;
+    border-top-color: #ebeef5;
+  }
+
+  .hw-popover-arrow::after{
+    content: '';
+    border-top-color: white;
+    bottom: -5px;
+    margin-left: -6px;
+  }
+
+  .arrow-top-start,
+  .arrow-top-center,
+  .arrow-top-end{
+    top: 100%;
+  }
+
+  .arrow-bottom-start,
+  .arrow-bottom-center,
+  .arrow-bottom-end{
+    bottom: 100%;
+    transform: rotate(180deg);
+  }
+
+  .arrow-left-start,
+  .arrow-left-center,
+  .arrow-left-end{
+    left: 100%;
+    transform: rotate(-90deg);
+  }
+
+  .arrow-right-start,
+  .arrow-right-center,
+  .arrow-right-end{
+    right: 100%;
+    transform: rotate(90deg);
+  }
+
+  .arrow-top-start,
+  .arrow-bottom-start{
+    left: 4px;
+  }
+
+  .arrow-top-center,
+  .arrow-bottom-center{
+    left: calc(50% - 6px);
+  }
+
+  .arrow-top-end,
+  .arrow-bottom-end{
+    right: 4px;
+  }
+  
+  .arrow-left-start,
+  .arrow-right-start{
+    top: 4px;
+  }
+
+  .arrow-left-center,
+  .arrow-right-center{
+    top: calc(50% - 6px);
+  }
+
+  .arrow-left-end,
+  .arrow-right-end{
+    bottom: 4px;
+  }
+
+  .arrow-custom{
+    border-top-color: red;
+    &::after{
+      border-top-color: palegreen;
+    }
+  }
+
+}
+
+.popover-custom{
+  padding: 20px;
+  border-radius: 4px;
+  color: red;
+  background-color: palegreen;
+  border: 1px solid red;
+}
+

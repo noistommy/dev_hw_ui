@@ -1,0 +1,131 @@
+@charset "utf-8";
+//base
+@import './base';
+
+//mixins
+//@import './mixins/button.scss';
+@import './mixins/thumb.scss';
+
+
+//hiworks
+@import './hiworks.scss';
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $baseColor;
+  background-color: $background;
+}
+//-----------------------------------------//
+// Typography
+//-----------------------------------------//
+
+// size(group)
+
+.hw-button, .hw-input, hw-loading {
+  &.tiny {font-size: $tinySize+em;}
+  &.small {font-size: $smallSize+em;}
+  &.normal {font-size: $mediumSize+em;}
+  &.large {font-size: $largeSize+em;}
+  &.huge {font-size: $hugeSize+em;}
+  &.massive {font-size: $massiveSize+em;}
+}
+
+.h1 {font-size: $h1; font-weight: $headerFontWeight;}
+.h2 {font-size: $h2;  font-weight: $headerFontWeight;}
+.h3 {font-size: $h3;  font-weight: $headerFontWeight;}
+.h4 {font-size: $h4;  font-weight: $headerFontWeight;}
+.h5 {font-size: $h5;  font-weight: $headerFontWeight;}
+
+// weight(group)
+
+.light {font-weight: $fontWeight - 100};
+.bold {font-weight: $fontWeight + 200};
+.strong {font-weight: 900};
+
+//-----------------------------------------//
+//Colors
+//-----------------------------------------//
+
+//Color-brand
+
+.primary-color { color: $primary-color !important }
+.secondary-color { color: $secondary-color !important }
+.info-color { color: $info-color !important }
+.warning-color { color: $warning-color !important }
+.danger-color { color: $danger-color !important }
+.yellow-color { color: $yellow-color !important }
+
+.color-333 { color: #333 !important }
+.color-666 { color: #666 !important }
+.color-999 { color: #999 !important }
+
+//Background color-brand
+
+.primary-bg { background-color: $primary-color !important }
+.secondary-bg { background-color: $secondary-color !important }
+.info-bg { background-color: $info-color !important }
+.warning-bg { background-color: $warning-color !important }
+.danger-bg { background-color: $danger-color !important }
+.yellow-bg { background-color: $yellow-color !important }
+
+
+//-----------------------------------------//
+// Colors - by Group
+//-----------------------------------------//
+
+//background
+.primary-bg { background-color: $accent; }
+.background_1 { background-color: $background1; }
+.background_2 { background-color: $background2; }
+
+.surface_1 { background-color: $surface1; }
+.surface_2 { background-color: $surface2; }
+
+//typography
+
+.primary-text { color: $text-light; }
+
+.text {
+  &-light { color: $text-light; }
+  &-dark { color: $text-dark; }
+  &-gray {
+    color: $gray;
+    &-light { color: $gray-light; }
+    &-dark { color: $gray-dark; }
+  }
+  &-error { color: $text-error; }
+  &-attent { color: $text-attention; }
+}
+
+
+
+
+//Color Palette(group)
+
+@each $colorName, $colorValue in $issueColors {
+  .hw {
+    &.#{$colorName} {
+      //background-color: lighten($colorValue, 15);
+      &-text {
+        color: $colorValue;
+        //background-color: transparent;
+      }
+      &.shape {
+        background-color: $colorValue;
+        color: #ffffff;
+      }
+      &.light {
+        background-color: lighten($colorValue, 30);
+      }
+    }
+    &.border-#{$colorName} {
+      border: 1px solid lighten($colorValue, 10) !important;
+    }
+  }
+
+}
+

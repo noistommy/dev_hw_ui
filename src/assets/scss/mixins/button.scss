@@ -1,0 +1,133 @@
+@mixin hw-button() {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #333;
+  padding: 0.4em 1.2em;
+  font-size: 1rem;
+  transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  //hover & focus
+  &.hover, &.focus,
+  &:hover, &:focus {
+    background: #ebebeb;
+    border-color: #ebebeb;
+    outline: none;
+  }
+
+  //disabled
+  &[disabled], &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+
+  //icon
+  .icon {
+    //display: inline-block;
+    font-size: 1em;
+    margin-right: 0.5em;
+    //margin-top: 1px;
+    //line-height: 1.15;
+    //vertical-align: middle;
+    &.fa-signal-3 {
+      margin-bottom: 5px;
+    }
+  }
+
+  > .label + .icon {
+    margin-left: 0.5em;
+    margin-right: 0;
+  }
+
+  //이웃하는 버튼 간격
+  & + .hw-button {
+    margin-left: 14px;
+  }
+
+  //primary
+  &.primary {
+    @include colorVariant($primary-color, $primary-color-hover, #fff);
+  }
+
+  //secondary
+  &.secondary {
+    @include colorVariant($secondary-color, $secondary-color-hover, #333);
+  }
+
+  //info
+  &.info {
+    @include colorVariant($info-color, $info-color-hover, #fff);
+  }
+
+  &.danger {
+    @include colorVariant(#A73030, $danger-color, #fff);
+  }
+
+
+  //text
+  &.text {
+    padding: 0;
+    background: transparent;
+    border: none;
+    &:hover,
+    &:focus {
+      color: $pale-blue;
+    }
+    &[disabled],
+    &:disabled {
+      &:hover {
+      //  color: $primary-color;
+        background: transparent;
+        border-color: transparent;
+        opacity: 0.5;
+      }
+    }
+    &.readOnly {
+      color: $baseColor;
+      pointer-events: none;
+      &:hover {
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &.sm {
+    padding: 0 0.8em;
+    //min-height: 30px;
+    //height: 30px;
+    font-size: 0.8em;
+    .label {
+      line-height: 28px;
+    }
+  }
+
+}
+
+//color variation
+@mixin colorVariant($bgColor, $bgHoverColor, $color) {
+  background-color: $bgColor;
+  border-color: $bgHoverColor;
+  color: $color;
+  &:hover,
+  &:focus {
+    background-color: $bgHoverColor;
+    border-color: $bgHoverColor;
+  }
+  &[disabled],
+  &:disabled {
+    &:hover {
+      color: $color;
+      background-color: $bgColor;
+      border-color: $bgHoverColor;
+    }
+  }
+}

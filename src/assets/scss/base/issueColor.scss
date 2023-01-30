@@ -1,0 +1,136 @@
+//default font size
+$fontSize: 14px;
+// issue color pallet
+$issue_red: #D75757;
+$issue_orange: #EE9033;
+$issue_yellow: #F8B825;
+$issue_lightgreen: #B3BC40;
+$issue_green: #61A475;
+$issue_lightblue: #8CC5CE;
+$issue_blue: #70A3CA;
+$issue_deepblue: #5178AF;
+$issue_deeppurple: #9180B4;
+$issue_purple: #AF77C0;
+$issue_brown: #A86A82;
+$issue_gray: #8B8B8B;
+
+
+$issueColors: (
+        'red': $issue_red,
+        'orange': $issue_orange,
+        'yellow' : $issue_yellow,
+        'lightgreen' : $issue_lightgreen,
+        'green' : $issue_green,
+        'lightblue' : $issue_lightblue,
+        'blue' : $issue_blue,
+        'deepblue' : $issue_deepblue,
+        'deeppurple' : $issue_deeppurple,
+        'purple' : $issue_purple,
+        'brown' : $issue_brown,
+        'gray' : $issue_gray
+);
+
+$issueLineColors: (
+        'red': #eaa4a4,
+        'orange': #f5c18e,
+        'yellow' : #fad882,
+        'lightgreen' : #cddd91,
+        'green' : #9fcdac,
+        'lightblue' : #b4dbe0,
+        'blue' : #aecbe3,
+        'deepblue' : #99b0d0,
+        'deeppurple' : #bfb4d6,
+        'purple' : #d4b2de,
+        'brown' : #cfabb9,
+        'gray' : #aeaeae
+);
+
+$issueContentsColors: (
+        'red': #fcf0f0,
+        'orange': #fbf1e8,
+        'yellow' : #fcf7de,
+        'lightgreen' : #eaf6d9,
+        'green' : #ddf6e2,
+        'lightblue' : #dbf0f2,
+        'blue' : #e6f2ff,
+        'deepblue' : #e0e7f1,
+        'deeppurple' : #ece8f8,
+        'purple' : #f8ecfc,
+        'brown' : #f5ebef,
+        'gray' : #ececec
+);
+
+@each $colorName, $colorValue in $issueColors {
+  .hw-button.#{$colorName} {
+    background-color: #{$colorValue};
+    //border: 1px solid #{darken($colorValue, 10)};
+    color: #ffffff;
+    &:hover {
+      background-color: darken($colorValue, 10);
+      //border: 1px solid #{darken($colorValue, 10)};
+    }
+    &.outline {
+      color: #{$colorValue};
+      //border-color: #{$colorValue};
+      box-shadow: 0 0 0 1px #{$colorValue} inset;
+      &:hover {
+        background-color: darken($colorValue, 10);
+        color: #ffffff;
+      }
+      &:hover i {
+        color: #ffffff;
+      }
+    }
+    &.text {
+      color: #{$colorValue};
+      background-color: transparent;
+      border: 0;
+      &:hover, &:focus {
+        color: darken($colorValue, 10);
+      }
+    }
+  }
+  .hw-tag.#{$colorName} {
+    background-color: #{$colorValue} !important;
+    border-color: #{darken($colorValue, 10)} !important;
+    color: #ffffff;
+    .label:hover {
+      background-color: #{darken($colorValue, 20)}
+    }
+  }
+  .hw-input.#{$colorName} {
+    color: #{$colorValue} !important;
+  }
+  .hw-input.#{$colorName}:focus {
+    border-color: #{$colorValue} !important;
+  }
+  .hw-badge.#{$colorName} {
+    background-color: #{$colorValue};
+    color: #fff;
+    &.invert {
+      color: #{$colorValue};
+      background-color: #fff;
+    }
+  }
+}
+
+@each $colorName, $colorValue in $issueColors {
+  .issue-main-#{$colorName} {
+    color: #{$colorValue};
+    background-color: #{$colorValue};
+  }
+}
+
+@each $colorName, $colorValue in $issueLineColors {
+  .issue-line-#{$colorName} {
+    color: #{$colorValue};
+    background-color: #{$colorValue};
+  }
+}
+
+@each $colorName, $colorValue in $issueContentsColors {
+  .issue-contents-#{$colorName} {
+    color: #{$colorValue};
+    background-color: #{$colorValue};
+  }
+}
