@@ -384,9 +384,11 @@ $inputPadding: (11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
     }
     i.icon {
       height: 0.85em;
-      margin: 0 0.8em 0 0;
       text-align: center;
       font-size: 1em;
+      &.left {
+        margin: 0 0.8em 0 0;
+      }
       &.right {
         margin: 0 -2px 0 5px;
       }

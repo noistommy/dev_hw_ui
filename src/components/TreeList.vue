@@ -60,40 +60,40 @@
                         title: 'Node1',
                         isExpanded: false,
                         children: [
-                            {id:'1-1', title: 'node1-1 긴 타이틀 작성 시 속성 값에 따라 말줄임 표시를 한다.',isExpanded: false, children:[], icon: 'gi gi-server' },
+                            {id:'1-1', title: 'node1-1 긴 타이틀 작성 시 속성 값에 따라 말줄임 표시를 한다.',isExpanded: false, children:[], icon: 'fa fa-server' },
                             {id:'1-2', title: 'node1-2',isExpanded: false, children:[
-                                    {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                    {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                    {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                    {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'fa fa-server' },
                                     {id:'1-2-3', title: 'node1-2-3',isExpanded: false, children:[
-                                            {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                            {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'fa fa-server' },
                                             {id:'1-2-3-2', title: 'node1-2-3-2',isExpanded: false, children:[
-                                                    {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[], icon: 'gi gi-server' },
-                                                ],icon: 'gi gi-server' },
+                                                    {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[], icon: 'fa fa-server' },
+                                                ],icon: 'fa fa-server' },
                                         ],
-                                        icon: 'gi gi-server' },
-                                    {id:'1-2-4', title: 'node1-2-4',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                    {id:'1-2-5', title: 'node1-2-5',isExpanded: false, children:[], icon: 'gi gi-server' },
-                                    {id:'1-2-6', title: 'node1-2-6',isExpanded: false, children:[],icon: 'gis gi-server' }
-                                ],icon: 'gi gi-server' }
+                                        icon: 'fa fa-server' },
+                                    {id:'1-2-4', title: 'node1-2-4',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                    {id:'1-2-5', title: 'node1-2-5',isExpanded: false, children:[], icon: 'fa fa-server' },
+                                    {id:'1-2-6', title: 'node1-2-6',isExpanded: false, children:[],icon: 'fa fa-server' }
+                                ],icon: 'fa fa-server' }
                         ],
-                        icon: 'gis gi-server'
+                        icon: 'fa fa-server'
                     },{
                         id: 2,
                         title: 'Node2',
                         isExpanded: false,
                         children: [
-                            {id:'2-1', title: 'node2-1',isExpanded: false, children:[],icon: 'gi gi-server' },
+                            {id:'2-1', title: 'node2-1',isExpanded: false, children:[],icon: 'fa fa-server' },
                             {id:'2-2', title: 'node2-2',isExpanded: false, children:[
                                     {id:'1-2', title: 'node1-2',isExpanded: false, children:[
-                                            {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                            {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                            {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                            {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'fa fa-server' },
                                             {id:'1-2-3', title: 'node1-2-3',isExpanded: false, children:[
-                                                    {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                                ],icon: 'gi gi-server' }
-                                        ],icon: 'gi gi-server' }
-                                ],icon: 'gi gi-server' }
+                                                    {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                                ],icon: 'fa fa-server' }
+                                        ],icon: 'fa fa-server' }
+                                ],icon: 'fa fa-server' }
                         ],
-                        icon: 'gis gi-server'
+                        icon: 'fa fa-server'
                     }
                 ]
             }

@@ -1,16 +1,16 @@
 <template lang="pug">
-  #app
-    hw-modal-container
-    hw-pane-layout( :layout="layoutType", :handle-class="handleName", :class="`app-layout`")
-      .main-menu(:class="{hide: isMobile}")
-        main-menu(:active="activeMenu")
-      hw-resize-handle( :handle-class="handleName" :hide-handle="true")
-      .main-contents
-        .contents-header
-          .header-title {{activeMenu}}
+#app
+  hw-modal-container
+  hw-pane-layout( :layout="layoutType", :handle-class="handleName", :class="`app-layout`")
+    .main-menu(:class="{hide: isMobile}")
+      main-menu(:active="activeMenu")
+    hw-resize-handle( :handle-class="handleName" :hide-handle="true")
+    .main-contents
+      .contents-header
+        .header-title {{activeMenu}}
 
-        .contents-body
-          router-view
+      .contents-body
+        router-view
 </template>
 
 <script>
@@ -159,6 +159,7 @@ body {
         border-radius: 50%;
         display: flex;
         align-items: center;
+        font-size: 1.4em;
         i {
           margin: 0 3px;
         }

@@ -20,7 +20,7 @@
                             hw-draggable(v-bind="type.option")
                                 div.apple-item(v-for="item in type.option.list", :key="item.id")
                                     span.item-handle(v-if="type.option.handleClass")
-                                        i(class="gis gi-grab") 
+                                        i(class="fa fa-grab") 
                                     span {{item.name}}
 </template>
 <script>

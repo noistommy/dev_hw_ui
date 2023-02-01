@@ -24,7 +24,7 @@
       <div class="guide-row" :style="guideRowStyle">
         <div class="guide-row-line" v-show="!isDragging">
           <div class="item">
-            <div class="hw-button icon circle" @click="browseFile"><i class="gi gi-paperclip"></i></div>
+            <div class="hw-button icon circle" @click="browseFile"><i class="fa fa-paperclip"></i></div>
           </div>
           <div class="item">
             <span class="primary-color browse-text guide-text" @click="browseFile">{{languageMap[location].browse}}</span>

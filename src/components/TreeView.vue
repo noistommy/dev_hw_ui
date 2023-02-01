@@ -39,10 +39,10 @@
                     {name: 'treeData.name', type: 'String', default: 'New Node', desc: '트리의 노드 이름'},
                     {name: 'treeData.children', type: 'Array', default: '[] || undefined', desc: '트리의 자식 노드 리스트'},
                     {name: 'defaultNodeName', type: 'String', default: 'New Node', desc: '새로운 트리노드 생성시 기본 노드 이름'},
-                    {name: 'createIcon', type: 'String', default: 'gi gi-plus', desc: '노드 생성 버튼 아이콘 클래스'},
-                    {name: 'deleteIcon', type: 'String', default: 'gi gi-trash', desc: '노드 삭제 버튼 아이콘 클래스'},
-                    {name: 'editIcon', type: 'String', default: 'gi gi-pencil', desc: '노드 수정 버튼 아이콘 클래스'},
-                    {name: 'updateIcon', type: 'String', default: 'gi gi-check', desc: '노드 수정 완료 버튼 아이콘 클래스'},
+                    {name: 'createIcon', type: 'String', default: 'fa fa-plus', desc: '노드 생성 버튼 아이콘 클래스'},
+                    {name: 'deleteIcon', type: 'String', default: 'fa fa-trash', desc: '노드 삭제 버튼 아이콘 클래스'},
+                    {name: 'editIcon', type: 'String', default: 'fa fa-pencil', desc: '노드 수정 버튼 아이콘 클래스'},
+                    {name: 'updateIcon', type: 'String', default: 'fa fa-check', desc: '노드 수정 완료 버튼 아이콘 클래스'},
                     {name: 'maxLevel', type: 'Number', default: '4', desc: '트리의 최대 깊이'}
                 ],
                 eventData: [
@@ -93,11 +93,11 @@
                         }
                     },
                     {
-                        title: 'createIcon = \'gis gi-star\'',
+                        title: 'createIcon = \'fa fa-star\'',
                         description: 'gtris-icon 클래스 목록중 선택하여 노드 생성 아이콘을 설정합니다.',
                         option: {
                             container: '.type-preview',
-                            createIcon: 'gis gi-star',
+                            createIcon: 'fa fa-star',
                             treeData: {
                                 name: 'Root Node',
                                 children: []
@@ -105,11 +105,11 @@
                         }
                     },
                     {
-                        title: 'deleteIcon = \'gis gi-star\'',
+                        title: 'deleteIcon = \'fa fa-star\'',
                         description: 'gtris-icon 클래스 목록중 선택하여 노드 삭제 아이콘을 설정합니다.',
                         option: {
                             container: '.type-preview',
-                            deleteIcon: 'gis gi-star',
+                            deleteIcon: 'fa fa-star',
                             treeData: {
                                 name: 'Root Node',
                                 children: []
@@ -117,11 +117,11 @@
                         }
                     },
                     {
-                        title: 'editIcon = \'gis gi-star\'',
+                        title: 'editIcon = \'fa fa-star\'',
                         description: 'gtris-icon 클래스 목록중 선택하여 노드 수정 아이콘을 설정합니다.',
                         option: {
                             container: '.type-preview',
-                            editIcon: 'gis gi-star',
+                            editIcon: 'fa fa-star',
                             treeData: {
                                 name: 'Root Node',
                                 children: []
@@ -129,11 +129,11 @@
                         }
                     },
                     {
-                        title: 'updateIcon = \'gis gi-star\'',
+                        title: 'updateIcon = \'fa fa-star\'',
                         description: 'gtris-icon 클래스 목록중 선택하여 노드 수정 완료 아이콘을 설정합니다.',
                         option: {
                             container: '.type-preview',
-                            updateIcon: 'gis gi-star',
+                            updateIcon: 'fa fa-star',
                             treeData: {
                                 name: 'Root Node',
                                 children: []

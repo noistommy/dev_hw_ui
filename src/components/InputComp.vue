@@ -1,5 +1,6 @@
 <template lang="pug">
 div.input-view
+    ScrollSpy(type="dot", container-key=".input-view", section-key=".type-wrapper", title-key=".type-title", :init-offset="0", @select="setGoto" )
     .contents-detail-view
         hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
             span(@click="setContents(tab.key)") {{tab.name}}
@@ -15,8 +16,7 @@ div.input-view
                         hw-g-input(place-holder="기본 텍스트 박스", v-model="inputText", @onInput="insertData", :label-text="`Input 1`")
                     .type-result {{inputText}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -28,8 +28,7 @@ div.input-view
                     .type-preview
                         hw-g-input(disabled)
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -42,8 +41,7 @@ div.input-view
                         hw-g-input(underline, @onInput="insertData")
                     .type-result {{inputText}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -56,8 +54,7 @@ div.input-view
                         hw-g-input(icon="search" iconPos="left" inline)
                         hw-g-input(icon="search" iconPos="right" inline)
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -70,8 +67,7 @@ div.input-view
                         hw-g-input(icon="search", button, iconPos="left", inline, @submit="buttonClick")
                         hw-g-input(icon="search", button, iconPos="right", inline, @submit="buttonClick")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -83,8 +79,7 @@ div.input-view
                     .type-preview
                         hw-g-input(readOnly, v-model="staticText")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -96,8 +91,7 @@ div.input-view
                     .type-preview
                         hw-g-input(place-holder="special style", transparent, v-model="inputText")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -109,8 +103,7 @@ div.input-view
                     .type-preview
                         hw-g-input(v-for="size in sizeList", :key="size", :size="size", inline)
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -124,8 +117,7 @@ div.input-view
                         .user-btn( @click="toggleEditMode")
                             hw-button(:icon="editable ? 'check' : 'pencil'", circle, v-model="inputText")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -137,8 +129,7 @@ div.input-view
                     .type-preview
                         hw-g-input(place-holder="Insert Textarea", type="textarea")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -153,8 +144,7 @@ div.input-view
                     .type-event
                         hw-button(color="red", :button-text="`에러발생`", size="small" @onclick="setError")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -166,8 +156,7 @@ div.input-view
                     .type-preview.color
                         hw-g-input(v-for="color in colorPalette", :key="color", :color="color", inline, :text-value="color")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -180,9 +169,11 @@ div.input-view
 
 <script>
     import InformationView from "./InformationView";
+    import ScrollSpy from "../packages/ScrollSpy/ScrollSpy";
+
     export default {
         name: 'hw-input-component',
-        components: {InformationView},
+    components: { InformationView, ScrollSpy },
         data () {
             return {
                 usage: "<hw-button button-text='text' />",
@@ -307,6 +298,10 @@ div.input-view
                     this.infoComp = null;
                 }
             },
+            setGoto(payload) {
+                const parent = this.$el;
+                parent.scrollTop = payload.target.offset
+            }
         }
     }
 </script>

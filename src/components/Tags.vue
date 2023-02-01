@@ -1,78 +1,66 @@
 <template lang="pug">
-  div.context-menu-view
-    .contents-detail-view
-      hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
-        span(@click="setContents(tab.key)") {{tab.name}}
-      .contents-section
-        template(v-if="showInfo")
-          components(:is="infoComp", :usage="usage", :props-data="propsData", :event-data="eventData")
-        template(v-else)
-          .section-title Types
-          .add-test
-            .hw-button.icon(v-for="color in colorPalette", :key="color", :class="`${color}`", @click="addTags(color)")
-              i.gis.gi-plus
-          .type-wrapper
-            .type-title Line Tags
-            .type-desc
-            .type-preview(:style="previewSize")
-              .hw-tags-wrapper
-                hw-tags(:tags="tagList")
-            .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
-          .type-wrapper
-            .type-title Dot Tags
-            .type-desc
-            .type-preview(:style="previewSize", )
-              .hw-tags-wrapper
-                hw-tags(:tags="tagList", type="dot")
-            .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
-          .type-wrapper
-            .type-title Static Label Tags
-            .type-desc
-            .type-preview(:style="previewSize", )
-              .hw-tags-wrapper
-                hw-tag(tag-text="성공", color="green", type="label")
-              .hw-tags-wrapper
-                hw-tags( type="label")
-            .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
-          .type-wrapper
-            .type-title  Label Tags
-            .type-desc
-            .type-preview(:style="previewSize", )
-              .hw-tags-wrapper
-                hw-tags(:tags="tagList", type="label")
-            .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
-          .type-wrapper
-            .type-title  Event
-            .type-desc
-            .type-preview(:style="previewSize", )
-              .hw-tags-wrapper
-                hw-tags(:tags="tagList", type="label", @select="selectTag")
-            .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
-          .type-wrapper
-            .type-title  Hover Effect - [One of A Kind]
-            .type-desc
-            .type-preview(:style="previewSize", )
-              .hw-tags-wrapper
-                hw-tags(:tags="tagList", type="label", :hover-effect="`one-of-a-kind`")
-            .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
-
-
-
-
-
-
+div.context-menu-view
+  .contents-detail-view
+    hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
+      span(@click="setContents(tab.key)") {{tab.name}}
+    .contents-section
+      template(v-if="showInfo")
+        components(:is="infoComp", :usage="usage", :props-data="propsData", :event-data="eventData")
+      template(v-else)
+        .section-title Types
+        .add-test
+          .hw-button.icon(v-for="color in colorPalette", :key="color", :class="`${color}`", @click="addTags(color)")
+            i.fa.fa-plus
+        .type-wrapper
+          .type-title Line Tags
+          .type-desc
+          .type-preview(:style="previewSize")
+            .hw-tags-wrapper
+              hw-tags(:tags="tagList")
+          .type-btn(@click="toggleCode")
+            i.fas.fa-code
+        .type-wrapper
+          .type-title Dot Tags
+          .type-desc
+          .type-preview(:style="previewSize", )
+            .hw-tags-wrapper
+              hw-tags(:tags="tagList", type="dot")
+          .type-btn(@click="toggleCode")
+            i.fas.fa-code
+        .type-wrapper
+          .type-title Static Label Tags
+          .type-desc
+          .type-preview(:style="previewSize", )
+            .hw-tags-wrapper
+              hw-tag(tag-text="성공", color="green", type="label")
+            .hw-tags-wrapper
+              hw-tags( type="label")
+          .type-btn(@click="toggleCode")
+            i.fas.fa-code
+        .type-wrapper
+          .type-title  Label Tags
+          .type-desc
+          .type-preview(:style="previewSize", )
+            .hw-tags-wrapper
+              hw-tags(:tags="tagList", type="label")
+          .type-btn(@click="toggleCode")
+            i.fas.fa-code
+        .type-wrapper
+          .type-title  Event
+          .type-desc
+          .type-preview(:style="previewSize", )
+            .hw-tags-wrapper
+              hw-tags(:tags="tagList", type="label", @select="selectTag")
+          .type-btn(@click="toggleCode")
+            i.fas.fa-code
+        .type-wrapper
+          .type-title  Hover Effect - [One of A Kind]
+          .type-desc
+          .type-preview(:style="previewSize", )
+            .hw-tags-wrapper
+              hw-tags(:tags="tagList", type="label", :hover-effect="`one-of-a-kind`")
+          .type-btn(@click="toggleCode")
+            i.fas.fa-code
 </template>
 
 <script>

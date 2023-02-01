@@ -36,8 +36,7 @@ div.calendar-view
                         p {{resultRange.start}}
                         p {{resultRange.end}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body

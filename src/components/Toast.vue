@@ -1,19 +1,19 @@
 <template lang="pug">
-    .toast-view
-        .contents-detail-view
-            .contents-section
-                .section-title TOAST
-                    .type-wrapper
-                        .type-title 기본 스타일
-                        .type-desc
-                        .type-preview
-                            .ex-toast.hw-toast-container(v-for="(item, index) in stateList", :key="index", :class="`-toast-${item.type}`" @click="showToast(item.type)")
-                                .hw-toast-box
-                                    .icon-box
-                                        i(:class="`gis ${item.icon}`")
-                                    .toast-text This is {{item.type}} type toast box. If you show this toast 'Click' this.
-                                    .close-box
-                                        i.gi.gi-cancel
+.toast-view
+    .contents-detail-view
+        .contents-section
+            .section-title TOAST
+                .type-wrapper
+                    .type-title 기본 스타일
+                    .type-desc
+                    .type-preview
+                        .ex-toast.hw-toast-container(v-for="(item, index) in stateList", :key="index", :class="`-toast-${item.type}`" @click="showToast(item.type)")
+                            .hw-toast-box
+                                .icon-box
+                                    i(:class="`fal ${item.icon}`")
+                                .toast-text This is {{item.type}} type toast box. If you show this toast 'Click' this.
+                                .close-box
+                                    i.fa.fa-xmark
 </template>
 
 <script>
@@ -26,10 +26,10 @@
                     width: '80%'
                 },
                 stateList: [
-                    {type:'success', icon: 'gi-check-circle'},
-                    {type:'warning', icon: 'gi-exclam-circle'},
-                    {type:'info', icon: 'gi-exclam-circle rotate-180'},
-                    {type:'error', icon: 'gi-cancel-alt'},
+                    {type:'success', icon: 'fa-circle-check'},
+                    {type:'warning', icon: 'fa-circle-exclamation'},
+                    { type: 'info', icon: 'fa-circle-exclamation rotate-180'},
+                    {type:'error', icon: 'fa-ban'},
                 ]
             }
         },

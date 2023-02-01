@@ -1,10 +1,10 @@
 <template>
   <div class="hw-select-box" :class="[{open:isOpen}, type, {fluid}, {spinner}, spinnerPos]" :style="{minWidth: minWidth}">
-<!--    <span class="select-icon"><i class="select-icon" :class="`gi gi-short-arrow-${isOpen ? 'up' : 'down'}-alt`"></i></span>-->
+<!--    <span class="select-icon"><i class="select-icon" :class="`fa fa-chevron-${isOpen ? 'up' : 'down'}`"></i></span>-->
     <div class="selected-item" ref="result" @click="toggleOpen">
       <i class="item-icon" v-if="itemIcon" :class="selectedOption.icon"></i>
       {{selectedOption.option || defaultText}}
-<!--      <i class="select-icon" :class="`gi gi-short-arrow-${isOpen ? 'up' : 'down'}-alt`"></i>-->
+<!--      <i class="select-icon" :class="`fa fa-chevron-${isOpen ? 'up' : 'down'}`"></i>-->
       <i class="select-icon" :class="`fas fa-chevron-${isOpen ? 'up' : 'down'}`"></i>
     </div>
     <template v-if="spinner">
@@ -29,7 +29,7 @@
           </div>
           {{ option[optionName] }}
           <span class="check-icon" v-if="isSelectedIcon && currentIndex === index">
-                        <i class="gis gi-check"></i>
+                        <i class="fa fa-check"></i>
                     </span>
         </div>
       </div>

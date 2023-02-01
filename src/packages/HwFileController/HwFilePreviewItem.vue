@@ -5,7 +5,7 @@
       @mousedown.prevent
     >
       <span class="remove-btn">
-        <i @click="removeFile(file.id)" class='gi gi-cancel-alt'></i>
+        <i @click="removeFile(file.id)" class='fa fa-cancel-alt'></i>
       </span>
       <div class="image-wrap" v-hw-tooltip.top.center="file.title">
         <img :style="imageStyle" :src="file.thumbnail_link" alt="image">

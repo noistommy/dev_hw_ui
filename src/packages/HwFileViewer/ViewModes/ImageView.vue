@@ -3,7 +3,7 @@
     <div class="hw-image-view-body">
       <div :class="['body-item', 'body-icon-wrap']">
           <span v-show="hasPrev" class="body-icon" @click="movePrev">
-            <i class='gi gi-short-arrow-left-alt'></i>
+            <i class='fa fa-chevron-left'></i>
           </span>
       </div>
       <div :class="['body-item', 'body-image-wrap']">
@@ -17,7 +17,7 @@
       </div>
       <div :class="['body-item', 'body-icon-wrap']">
           <span v-show="hasNext" class="body-icon" @click="moveNext">
-            <i class='gi gi-short-arrow-right-alt'></i>
+            <i class='fa fa-chevron-right'></i>
           </span>
       </div>
     </div>

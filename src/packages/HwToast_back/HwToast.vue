@@ -8,7 +8,7 @@
                 {{toast_msg}}
             </span>
             <span class="btn-close">
-                <i class="gis gi-close"></i>
+                <i class="fa fa-close"></i>
             </span>
         </div>
 

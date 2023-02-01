@@ -26,13 +26,12 @@ div.dropdown-view
                                 template(v-if="type.title === 'Button Slot'")
                                     span(slot="button-link")
                                         .hw-button.icon.circle.primary
-                                            i.gi.gi-plus
+                                            i.fa.fa-plus
                                 //.dropdown-menu(slot="menu")
                                     dropdown-item(v-for="(option,index) in searchedList",:key="`${type.title}_${option.value}`",:data="option",:option="option.option", :idx="index",:selected="selectedValue.value == index",@select="testSelect") {{option.option}}
 
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body

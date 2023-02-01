@@ -1,6 +1,6 @@
 <template>
     <div class="select-time-wrap hw-select hw-group icon right" @click="showTimeSelect">
-        <i class="gi gi-clock"></i>
+        <i class="fa fa-clock"></i>
         <div class="item-option default" v-if="!isTimeOpen">
             {{selectedTime !== null ? selectedTime.option :  '시간(옵션)'}}
         </div>

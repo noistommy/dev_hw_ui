@@ -17,7 +17,7 @@
             <div class="header-item-text">{{column.name || ""}}</div>
             <div class="sort-icon" v-if="column.sortable" v-show="isShowSortBox(column)">
               <div class="hw-icon circle tiny">
-                <i :class="`gis gi-short-arrow-${sortState.direction === 'asc' ? 'up' : 'down'}`" />
+                <i :class="`fa fa-chevron-${sortState.direction === 'asc' ? 'up' : 'down'}`" />
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@
             <div class="header-item-text">{{column.name || ""}}</div>
             <div class="sort-icon" v-if="column.sortable" v-show="isShowSortBox(column)">
               <div class="hw-icon circle tiny">
-                <i :class="`gis gi-short-arrow-${sortState.direction === 'asc' ? 'up' : 'down'}`" />
+                <i :class="`fa fa-chevron-${sortState.direction === 'asc' ? 'up' : 'down'}`" />
               </div>
             </div>
           </div>

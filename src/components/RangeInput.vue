@@ -1,69 +1,68 @@
 <template lang="pug">
-    div.date-picker-view
-        .contents-detail-view
-            .contents-section
-                .section-title Information
-                .info-wrapper
-                    .name-info
-                        .panel
-                            .panel-header Name
-                            .panel-body {{`Hw-${$route.name}`}}
+div.date-picker-view
+    .contents-detail-view
+        .contents-section
+            .section-title Information
+            .info-wrapper
+                .name-info
+                    .panel
+                        .panel-header Name
+                        .panel-body {{`Hw-${$route.name}`}}
+                .props-info
+                    .panel
+                        .panel-header Props
+                        .panel-body
+                            .table
+                                .tr
+                                    .th Name
+                                    .th Type
+                                    .th Default
+                                    .th Desc
+                                .tr(v-for="prop in propsData", :key="prop.name")
+                                    .td {{prop.name}}
+                                    .td {{prop.type}}
+                                    .td {{prop.default}}
+                                    .td {{prop.desc}}
+                .event-info
+                    .panel
+                        .panel-header Event
+                        .panel-body
+                            .table
+                                .tr
+                                    .th Name
+                                    .th Param Type
+                                    .th Desc
+                                .tr(v-for="event in eventData", :key="event.name")
+                                    .td {{event.name}}
+                                    .td {{event.type}}
+                                    .td {{event.desc}}
+                .usege-info
                     .props-info
-                        .panel
-                            .panel-header Props
-                            .panel-body
-                                .table
-                                    .tr
-                                        .th Name
-                                        .th Type
-                                        .th Default
-                                        .th Desc
-                                    .tr(v-for="prop in propsData", :key="prop.name")
-                                        .td {{prop.name}}
-                                        .td {{prop.type}}
-                                        .td {{prop.default}}
-                                        .td {{prop.desc}}
-                    .event-info
-                        .panel
-                            .panel-header Event
-                            .panel-body
-                                .table
-                                    .tr
-                                        .th Name
-                                        .th Param Type
-                                        .th Desc
-                                    .tr(v-for="event in eventData", :key="event.name")
-                                        .td {{event.name}}
-                                        .td {{event.type}}
-                                        .td {{event.desc}}
-                    .usege-info
-                        .props-info
-                        .panel
-                            .panel-header Usage
-                            .panel-body
-                                pre.language-css
-                                    code.code {{usage}}
-            .contents-section
-                .section-title Types
-                .type-wrapper(v-for="(type, index) in contentsList", :key="`calendar_${index}`", :id="`type_${index}`")
-                    .type-title {{type.title}}
-                    .type-desc {{type.description}}
-                    .type-preview(:style="previewSize")
-                        hw-range-input(
-                            v-bind="type.option"
-                            @value-changed="onValueChange"
-                            ref="editor"
-                        )
-                    .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
-                    .type-code.panel
-                        .panel-header code
+                    .panel
+                        .panel-header Usage
                         .panel-body
                             pre.language-css
-                                code.code(v-text="type.source")
-                    .type-msg.panel(v-if="type.message", :class="`panel-${type.message.type}`")
-                        .panel-body {{type.message.text}}
+                                code.code {{usage}}
+        .contents-section
+            .section-title Types
+            .type-wrapper(v-for="(type, index) in contentsList", :key="`calendar_${index}`", :id="`type_${index}`")
+                .type-title {{type.title}}
+                .type-desc {{type.description}}
+                .type-preview(:style="previewSize")
+                    hw-range-input(
+                        v-bind="type.option"
+                        @value-changed="onValueChange"
+                        ref="editor"
+                    )
+                .type-btn(@click="toggleCode")
+                    i.fas.fa-code
+                .type-code.panel
+                    .panel-header code
+                    .panel-body
+                        pre.language-css
+                            code.code(v-text="type.source")
+                .type-msg.panel(v-if="type.message", :class="`panel-${type.message.type}`")
+                    .panel-body {{type.message.text}}
 </template>
 
 <script>

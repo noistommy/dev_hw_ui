@@ -3,7 +3,7 @@
         <template v-for="(item, index) in parentsList">
             <template  v-if="index === 1 && isHidePath">
                 <div class="hide-middle-node" :key="index">
-                    <div class="hw-button circle icon"><i class="gis gi-ellipsis-h"></i></div>
+                    <div class="hw-button circle icon"><i class="fa fa-ellipsis-h"></i></div>
                     <span class="divider">
                         <slot name="divider">{{divider}}</slot>
                     </span>
@@ -13,7 +13,7 @@
                  :class="[{hide:isHidePath},{root:index === 0},{current: index === parentsList.length - 1},{parent: index === parentsList.length - 2}]">
     <!--            <span class="tooltip" v-hw-tooltip="item.title"></span>-->
                 <div class="node-wrap ellipsis" :class="{linked:item[linkKey] !== ''}" @click="selectPath(item, index)" v-hw-tooltip="item.title">
-                    <span class="bc-icon" v-if="isIcon"><i class="gi" :class="[`gi-${item.icon}`]"></i></span>
+                    <span class="bc-icon" v-if="isIcon"><i class="fa" :class="[`fa-${item.icon}`]"></i></span>
                     <span class="title">{{item.title}}</span>
 <!--                    <span v-if="useTooltip" class="tooltip" v-hw-tooltip="item.title"></span>-->
                 </div>

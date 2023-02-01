@@ -1,7 +1,7 @@
 <template>
   <div class="hw-range-input" :class="[isDisabled]">
     <div class="item item-control" @click="onStepClick('down')">
-      <i class="gis gi-minus"></i>
+      <i class="fa fa-minus"></i>
     </div>
     <div class="item item-gauge">
       <div class="full-gauge-bar" :style="{ width: leftX+'px', backgroundColor: itemColor }"></div>
@@ -15,7 +15,7 @@
       ></div>
     </div>
     <div class="item item-control" @click="onStepClick('up')">
-      <i class="gis gi-plus"></i>
+      <i class="fa fa-plus"></i>
     </div>
   </div>
 </template>

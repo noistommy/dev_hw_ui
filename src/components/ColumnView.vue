@@ -1,19 +1,19 @@
 <template>
     <div class="type-wrapper">
 <!--        <div class="column-view-option">-->
-<!--            <div class="hw-button icon outline"><i class="gi gi-short-arrow-left-alt"></i></div>-->
+<!--            <div class="hw-button icon outline"><i class="fa fa-chevron-left"></i></div>-->
 <!--        </div>-->
         <div class="hw-column-view">
             <template v-for="(column, index) in columnList" >
                 <div class="column-panel" v-if="index >= setHideColumn" :key="column.level" :class="[{pColumn: index === columnList.length - 2}]" :style="{zIndex: `${10 - index}`}" >
                     <div class="directory-wrapper" :class="`level_${index}`">
                         <div class="no-data" v-if="column.dataList.length === 0">
-                            <i class="gis gi-folder-reception"></i>
+                            <i class="fa fa-folder-reception"></i>
                         </div>
                         <div v-else class="dir-item" v-for="item in column.dataList" :class="{selected: item.id === column.pid}" :key="item.id" @click="selectItem(index, item)" >
                             <div class="file-icon"><i class="gis" :class="`${item.icon}`"></i></div>
                             <div class="dir-title ellipsis">{{item.title}}</div>
-                            <div class="dir-icon tiny" v-if="item.children.length > 0"><i class="gis gi-short-arrow-right-alt"></i></div>
+                            <div class="dir-icon tiny" v-if="item.children.length > 0"><i class="fa fa-chevron-right"></i></div>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
         </div>
         <div class="path">
             <hw-breadcrumb :parents-list="pathList" :id-key="`id`" @move="moveByPath">
-                <i class="gi gi-short-arrow-right-alt" slot="divider" />
+                <i class="fa fa-chevron-right" slot="divider" />
             </hw-breadcrumb>
         </div>
     </div>
@@ -29,28 +29,28 @@
 
 <script>
     const treeList = [
-        {id:'1-1', type: 'file', title: 'node1-1 긴 타이틀 작성 시 속성 값에 따라 말줄임 표시를 한다.',isExpanded: false, children:[], icon: 'gi gi-paper' },
+        {id:'1-1', type: 'file', title: 'node1-1 긴 타이틀 작성 시 속성 값에 따라 말줄임 표시를 한다.',isExpanded: false, children:[], icon: 'fa fa-paper' },
         {id:'1-2',type: 'folder', title: 'node1-2',isExpanded: false, children:[
                 {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[
-                        {id:'1-2-1-1', title: 'node1-2-1-1',isExpanded: false, children:[],icon: 'gi gi-folder' },
+                        {id:'1-2-1-1', title: 'node1-2-1-1',isExpanded: false, children:[],icon: 'fa fa-folder' },
                         {id:'1-2-1-2', title: 'node1-2-1-2',isExpanded: false, children:[
-                                {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[], icon: 'gi gi-server' },
-                            ],icon: 'gi gi-folder' },
-                    ],icon: 'gi gi-folder' },
-                {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'gi gi-folder' },
+                                {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[], icon: 'fa fa-server' },
+                            ],icon: 'fa fa-folder' },
+                    ],icon: 'fa fa-folder' },
+                {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'fa fa-folder' },
                 {id:'1-2-3', title: 'node1-2-3',isExpanded: false, children:[
-                        {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'gi gi-folder' },
+                        {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'fa fa-folder' },
                         {id:'1-2-3-2', title: 'node1-2-3-2',isExpanded: false, children:[
                                 {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[
-                                        {id:'1-2-3-2-1-1', title: 'node1-2-3-2-1',isExpanded: false, children:[],icon: 'gi gi-folder' },
-                                    ], icon: 'gi gi-folder' },
-                            ],icon: 'gi gi-folder' },
+                                        {id:'1-2-3-2-1-1', title: 'node1-2-3-2-1',isExpanded: false, children:[],icon: 'fa fa-folder' },
+                                    ], icon: 'fa fa-folder' },
+                            ],icon: 'fa fa-folder' },
                     ],
-                    icon: 'gi gi-folder' },
-                {id:'1-2-4', title: 'node1-2-4',isExpanded: false, children:[],icon: 'gi gi-folder' },
-                {id:'1-2-5', title: 'node1-2-5',isExpanded: false, children:[], icon: 'gi gi-folder' },
-                {id:'1-2-6', title: 'node1-2-6',isExpanded: false, children:[],icon: 'gis gi-folder' }
-            ],icon: 'gi gi-folder' }
+                    icon: 'fa fa-folder' },
+                {id:'1-2-4', title: 'node1-2-4',isExpanded: false, children:[],icon: 'fa fa-folder' },
+                {id:'1-2-5', title: 'node1-2-5',isExpanded: false, children:[], icon: 'fa fa-folder' },
+                {id:'1-2-6', title: 'node1-2-6',isExpanded: false, children:[],icon: 'fa fa-folder' }
+            ],icon: 'fa fa-folder' }
     ]
 
     export default {

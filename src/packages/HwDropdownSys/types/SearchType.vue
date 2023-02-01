@@ -6,7 +6,7 @@
                     <img :src="selectedItem[imageKey]">
                 </div>
                 {{selectedItem[optionKey]}}
-                <i class="gi gi-cancel"></i>
+                <i class="fa fa-cancel"></i>
             </div>
             <input type="text" class="searching" v-model="searchText"
                    @input="searchOption"

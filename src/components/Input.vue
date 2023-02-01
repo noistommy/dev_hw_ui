@@ -1,91 +1,89 @@
 <template lang="pug">
-  div.input-view
-    ScrollSpy(section-key=".type-wrapper", title-key=".type-title", title="Types", @select="setGoto")
-    .contents-detail-view
-      .contents-section
-        .section-title Types
-        .type-wrapper(v-for="(item, index) in inputData", :key="`input_${index}`")
-          .type-title {{item.name}}
-          .type-desc {{item.desc}}
-          .type-preview
-            template(v-if="item.name === 'Inline'")
-              .hw-input.inline
-                input(type="text", placeholder="PlaceHolder", :class="item.ex")
-            template(v-else)
-              .hw-input
-                //label.label LABEL
-                input(type="text", placeholder="PlaceHolder", :class="item.ex")
-          .type-btn(@click="toggleCode")
-            i.gis.gi-short-arrow-left-alt
-            i.gis.gi-short-arrow-right-alt
-          .type-code.panel
-            .panel-header code
-            .panel-body
-              pre.language-css
-                code.code(v-text='item.code')
+div.input-view
+  ScrollSpy(section-key=".type-wrapper", title-key=".type-title", title="Types", @select="setGoto")
+  .contents-detail-view
+    .contents-section
+      .section-title Types
+      .type-wrapper(v-for="(item, index) in inputData", :key="`input_${index}`")
+        .type-title {{item.name}}
+        .type-desc {{item.desc}}
+        .type-preview
+          template(v-if="item.name === 'Inline'")
+            .hw-input.inline
+              input(type="text", placeholder="PlaceHolder", :class="item.ex")
+          template(v-else)
+            .hw-input
+              //label.label LABEL
+              input(type="text", placeholder="PlaceHolder", :class="item.ex")
+        .type-btn(@click="toggleCode")
+          i.fas.fa-code
+        .type-code.panel
+          .panel-header code
+          .panel-body
+            pre.language-css
+              code.code(v-text='item.code')
 
-        .type-wrapper(v-for="(item, index) in inputExtendData", :key="`input_ex_${index}`")
-          .type-title {{item.name}}
-          .type-desc {{item.desc}}
-          .type-preview
-            template(v-if="item.type==='icon'")
-              .hw-input.icon.left
-                input(placeholder="PlaceHolder", :class="item.ex")
-                i.icon.gis.gi-search
-              .hw-input.icon.right
-                input(placeholder="PlaceHolder", :class="item.ex")
-                i.icon.gis.gi-search
-              .hw-input.icon.right.link
-                input(placeholder="PlaceHolder", :class="item.ex")
-                i.icon.gis.gi-search
-            template(v-if="item.type==='label'")
-              .hw-input.labeled.left
-                .hw-label Search
-                input(placeholder="PlaceHolder", :class="item.ex")
-              .hw-input.labeled.right
-                input(placeholder="PlaceHolder", :class="item.ex")
-                .hw-label Search
-            template(v-if="item.type==='button'")
-              .hw-input
-                .hw-button.icon
-                  i.gis.gi-search(@click="clickTest(item.ex)")
-                input(placeholder="PlaceHolder", :class="item.ex")
-              .hw-input
-                input(placeholder="PlaceHolder", :class="item.ex")
-                .hw-button.icon.outline
-                  i.gis.gi-search(@click="clickTest(item.ex)")
-              .hw-input
-                input(placeholder="PlaceHolder", :class="item.ex")
-                .hw-button.primary 저장
-            template(v-if="item.type==='fluid'")
-              .hw-input.fluid
-                input(placeholder="PlaceHolder", :class="item.ex")
-              .hw-input.fluid
-                input(placeholder="PlaceHolder", :class="item.ex")
-                .hw-button.icon
-                  i.gis.gi-search(@click="clickTest(item.ex)")
-            template(v-if="item.type==='readOnly'")
-              .hw-input
-                input(placeholder="PlaceHolder", :class="item.ex" :readonly="true" value="ReadOnly")
-            template(v-if="item.type==='textarea'")
-              .hw-input
-                textarea(placeholder="PlaceHolder", :class="item.ex")
-            template(v-if="item.type==='size'")
-              .hw-input.inline(v-for="size in sizeList", :key="size" :class="size")
-                input(:placeholder="size")
-            template(v-if="item.type==='transparent'")
-              .hw-input.inline
-                input(:placeholder="item.type", :class="item.ex")
-              .hw-input.inline
-                input(type="file", multiple, webkitdirectory, directory, @input="checkEvent")
-          .type-btn(@click="toggleCode")
-            i.gis.gi-short-arrow-left-alt
-            i.gis.gi-short-arrow-right-alt
-          .type-code.panel
-            .panel-header code
-            .panel-body
-              pre.language-css
-                code.code(v-text='item.code')
+      .type-wrapper(v-for="(item, index) in inputExtendData", :key="`input_ex_${index}`")
+        .type-title {{item.name}}
+        .type-desc {{item.desc}}
+        .type-preview
+          template(v-if="item.type==='icon'")
+            .hw-input.icon.left
+              input(placeholder="PlaceHolder", :class="item.ex")
+              i.icon.fa.fa-search
+            .hw-input.icon.right
+              input(placeholder="PlaceHolder", :class="item.ex")
+              i.icon.fa.fa-search
+            .hw-input.icon.right.link
+              input(placeholder="PlaceHolder", :class="item.ex")
+              i.icon.fa.fa-search
+          template(v-if="item.type==='label'")
+            .hw-input.labeled.left
+              .hw-label Search
+              input(placeholder="PlaceHolder", :class="item.ex")
+            .hw-input.labeled.right
+              input(placeholder="PlaceHolder", :class="item.ex")
+              .hw-label Search
+          template(v-if="item.type==='button'")
+            .hw-input
+              .hw-button.icon
+                i.fa.fa-search(@click="clickTest(item.ex)")
+              input(placeholder="PlaceHolder", :class="item.ex")
+            .hw-input
+              input(placeholder="PlaceHolder", :class="item.ex")
+              .hw-button.icon.outline
+                i.fa.fa-search(@click="clickTest(item.ex)")
+            .hw-input
+              input(placeholder="PlaceHolder", :class="item.ex")
+              .hw-button.primary 저장
+          template(v-if="item.type==='fluid'")
+            .hw-input.fluid
+              input(placeholder="PlaceHolder", :class="item.ex")
+            .hw-input.fluid
+              input(placeholder="PlaceHolder", :class="item.ex")
+              .hw-button.icon
+                i.fa.fa-search(@click="clickTest(item.ex)")
+          template(v-if="item.type==='readOnly'")
+            .hw-input
+              input(placeholder="PlaceHolder", :class="item.ex" :readonly="true" value="ReadOnly")
+          template(v-if="item.type==='textarea'")
+            .hw-input
+              textarea(placeholder="PlaceHolder", :class="item.ex")
+          template(v-if="item.type==='size'")
+            .hw-input.inline(v-for="size in sizeList", :key="size" :class="size")
+              input(:placeholder="size")
+          template(v-if="item.type==='transparent'")
+            .hw-input.inline
+              input(:placeholder="item.type", :class="item.ex")
+            .hw-input.inline
+              input(type="file", multiple, webkitdirectory, directory, @input="checkEvent")
+        .type-btn(@click="toggleCode")
+          i.fas.fa-code
+        .type-code.panel
+          .panel-header code
+          .panel-body
+            pre.language-css
+              code.code(v-text='item.code')
 
 </template>
 

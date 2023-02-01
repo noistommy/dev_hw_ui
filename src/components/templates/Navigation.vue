@@ -53,7 +53,7 @@
                                 <hw-list :list-data="mainList" :with-icon="true" :with-buttons="true">
                                     <template slot="buttonSet">
                                         <span class="hw-button icon circle" v-hw-tooltip="`태그편집`">
-                                            <i class="gis gi-ellipsis-h"></i>
+                                            <i class="fa fa-ellipsis-h"></i>
                                         </span>
                                     </template>
                                 </hw-list>
@@ -103,7 +103,7 @@
                                     </template>
                                     <template v-slot:buttonSet="slotProps">
                                         <span class="hw-button icon circle" @click="editExpand(slotProps.indexNumber)" v-hw-tooltip="`태그편집`">
-                                            <i class="gi gi-plus-alt"></i>
+                                            <i class="fa fa-plus-alt"></i>
                                         </span>
                                     </template>
 
@@ -137,7 +137,7 @@
                         </div>
                         <div class="nav-footer">
                             <div class="hw-button outline withIcon left fluid deepblue">
-                                <i class="gi gi-cog"></i>
+                                <i class="fa fa-cog"></i>
                                 <div class="label">내 공용 메일 관리</div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="nav-footer">
                             <div class="hw-button outline withIcon left fluid deepblue">
-                                <i class="gi gi-cog"></i>
+                                <i class="fa fa-cog"></i>
                                 <div class="label">내 공용 메일 관리</div>
                             </div>
                         </div>
@@ -180,31 +180,31 @@
         data () {
             return {
                 mainList: [
-                    {title: '최근 편지함', text: '', iconClass: 'gis gi-clock'},
-                    {title: '중요 편지함', text: '', iconClass: 'gis gi-star'},
-                    {title: '받은 편지함', text: '하이웍스 개발자 센터', iconClass: 'gis gi-paper-plane'},
-                    {title: '보낸 편지함', text: '', iconClass: 'gis gi-inbox'},
+                    {title: '최근 편지함', text: '', iconClass: 'fa fa-clock'},
+                    {title: '중요 편지함', text: '', iconClass: 'fa fa-star'},
+                    {title: '받은 편지함', text: '하이웍스 개발자 센터', iconClass: 'fa fa-paper-plane'},
+                    {title: '보낸 편지함', text: '', iconClass: 'fa fa-inbox'},
                 ],
                 extendList: [
                     {
                         title: "중요 주소록",
                         content: [],
-                        optionIcon: 'gis gi-star'
+                        optionIcon: 'fa fa-star'
                     },
                     {
                         title: "개인 주소록",
-                        content: [{title: '전체', iconClass: 'gis gi-address-book'}, {title: '하이웍스 TF', iconClass: 'gis gi-tag'}]
+                        content: [{title: '전체', iconClass: 'fa fa-address-book'}, {title: '하이웍스 TF', iconClass: 'fa fa-tag'}]
                     },
                     {
                         title: "공유 주소록",
-                        content: [{title: '전체', iconClass: 'gis gi-address-book'}, {title: '도메인 사업부', iconClass: 'gis gi-tag'}, {title: '하이웍스 사업부', iconClass: 'gis gi-tag'}, {title: '호스팅/IDC 사업부', iconClass: 'gis gi-tag'}]
+                        content: [{title: '전체', iconClass: 'fa fa-address-book'}, {title: '도메인 사업부', iconClass: 'fa fa-tag'}, {title: '하이웍스 사업부', iconClass: 'fa fa-tag'}, {title: '호스팅/IDC 사업부', iconClass: 'fa fa-tag'}]
                     },
                 ],
                 extendTreeList: [
                     {
                         title: "중요 주소록",
                         content: [],
-                        optionIcon: 'gis gi-star'
+                        optionIcon: 'fa fa-star'
                     },
                     {
                         title: "개인 주소록",
@@ -213,23 +213,23 @@
                             title: 'Node1',
                             isExpanded: false,
                             children: [
-                                {id:'1-1', title: 'node1-1 긴 타이틀 작성 시',isExpanded: false, children:[], icon: 'gi gi-server' },
+                                {id:'1-1', title: 'node1-1 긴 타이틀 작성 시',isExpanded: false, children:[], icon: 'fa fa-server' },
                                 {id:'1-2', title: 'node1-2',isExpanded: false, children:[
-                                        {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                        {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                        {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                        {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'fa fa-server' },
                                         {id:'1-2-3', title: 'node1-2-3',isExpanded: false, children:[
-                                                {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                                {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'fa fa-server' },
                                                 {id:'1-2-3-2', title: 'node1-2-3-2',isExpanded: false, children:[
-                                                        {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[], icon: 'gi gi-server' },
-                                                    ],icon: 'gi gi-server' },
+                                                        {id:'1-2-3-2-1', title: 'node1-2-3-2-1',isExpanded: false, children:[], icon: 'fa fa-server' },
+                                                    ],icon: 'fa fa-server' },
                                             ],
-                                            icon: 'gi gi-server' },
-                                        {id:'1-2-4', title: 'node1-2-4',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                        {id:'1-2-5', title: 'node1-2-5',isExpanded: false, children:[], icon: 'gi gi-server' },
-                                        {id:'1-2-6', title: 'node1-2-6',isExpanded: false, children:[],icon: 'gis gi-server' }
-                                    ],icon: 'gi gi-server' }
+                                            icon: 'fa fa-server' },
+                                        {id:'1-2-4', title: 'node1-2-4',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                        {id:'1-2-5', title: 'node1-2-5',isExpanded: false, children:[], icon: 'fa fa-server' },
+                                        {id:'1-2-6', title: 'node1-2-6',isExpanded: false, children:[],icon: 'fa fa-server' }
+                                    ],icon: 'fa fa-server' }
                             ],
-                            icon: 'gis gi-server'
+                            icon: 'fa fa-server'
                         }]
                     },
                     {
@@ -239,18 +239,18 @@
                             title: 'Node2',
                             isExpanded: false,
                             children: [
-                                {id:'2-1', title: 'node2-1',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                {id:'2-1', title: 'node2-1',isExpanded: false, children:[],icon: 'fa fa-server' },
                                 {id:'2-2', title: 'node2-2',isExpanded: false, children:[
                                         {id:'1-2', title: 'node1-2',isExpanded: false, children:[
-                                                {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                                {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'gi gi-server' },
+                                                {id:'1-2-1', title: 'node1-2-1',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                                {id:'1-2-2', title: 'node1-2-2',isExpanded: false, children:[],icon: 'fa fa-server' },
                                                 {id:'1-2-3', title: 'node1-2-3',isExpanded: false, children:[
-                                                        {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'gi gi-server' },
-                                                    ],icon: 'gi gi-server' }
-                                            ],icon: 'gi gi-server' }
-                                    ],icon: 'gi gi-server' }
+                                                        {id:'1-2-3-1', title: 'node1-2-3-1',isExpanded: false, children:[],icon: 'fa fa-server' },
+                                                    ],icon: 'fa fa-server' }
+                                            ],icon: 'fa fa-server' }
+                                    ],icon: 'fa fa-server' }
                             ],
-                            icon: 'gis gi-server'
+                            icon: 'fa fa-server'
                         }]
                     },
                 ],
@@ -261,7 +261,7 @@
                 let newContent = {
                     title: `새 메뉴 ${this.extendList[num].content.length-3}`,
                     content: [],
-                    iconClass: 'gis gi-tag'
+                    iconClass: 'fa fa-tag'
                 };
                 // alert(`ExtendList 의 ${num+1}번째 버튼 클릭`)
                 this.extendList[num].content.push(newContent)

@@ -1,48 +1,40 @@
 <template lang="pug">
-    div.context-menu-view
-        .contents-detail-view
-            hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
-                span(@click="setContents(tab.key)") {{tab.name}}
-            .contents-section
-                template(v-if="showInfo")
-                    components(:is="infoComp", :usage="usage", :props-data="propsData", :event-data="eventData")
-                template(v-else)
-                    .section-title Types
-                    .type-wrapper
-                        .type-title Standard
-                        .type-desc The Standard Switch toggle Button
-                        .type-preview(:style="previewSize")
-                            .hw-switch-wrapper
-                                hw-switch(v-model="switchData", @switch="setValue")
-                                .result {{switchData}} (Boolean)
-                        .type-btn(@click="toggleCode")
-                            i.gis.gi-short-arrow-left-alt
-                            i.gis.gi-short-arrow-right-alt
-                    .type-wrapper
-                        .type-title Custom Value Text
-                        .type-desc User use custom String value Data ex) ['YES | NO', 'TRUE | FALSE', 'ON | OFF']
-                        .type-preview(:style="previewSize")
-                            .hw-switch-wrapper
-                                hw-switch(v-model="switchData", on-value="ON", off-value="OFF", @switch="setTextValue")
-                                .result {{switchText}} (String)
-                        .type-btn(@click="toggleCode")
-                            i.gis.gi-short-arrow-left-alt
-                            i.gis.gi-short-arrow-right-alt
-                    .type-wrapper
-                        .type-title Custom Value Text
-                        .type-desc User use custom String value Data ex) ['YES | NO', 'TRUE | FALSE', 'ON | OFF']
-                        .type-preview(:style="previewSize")
+div.context-menu-view
+    .contents-detail-view
+        hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
+            span(@click="setContents(tab.key)") {{tab.name}}
+        .contents-section
+            template(v-if="showInfo")
+                components(:is="infoComp", :usage="usage", :props-data="propsData", :event-data="eventData")
+            template(v-else)
+                .section-title Types
+                .type-wrapper
+                    .type-title Standard
+                    .type-desc The Standard Switch toggle Button
+                    .type-preview(:style="previewSize")
+                        .hw-switch-wrapper
+                            hw-switch(v-model="switchData", @switch="setValue")
+                            .result {{switchData}} (Boolean)
+                    .type-btn(@click="toggleCode")
+                        i.fas.fa-code
+                .type-wrapper
+                    .type-title Custom Value Text
+                    .type-desc User use custom String value Data ex) ['YES | NO', 'TRUE | FALSE', 'ON | OFF']
+                    .type-preview(:style="previewSize")
+                        .hw-switch-wrapper
+                            hw-switch(v-model="switchData", on-value="ON", off-value="OFF", @switch="setTextValue")
                             .result {{switchText}} (String)
-                        .type-btn(@click="toggleCode")
-                            i.gis.gi-short-arrow-left-alt
-                            i.gis.gi-short-arrow-right-alt
-
-
-
-
-
-            .hw-switch-wrapper
-                                hw-switch(v-model="switchData", on-value="AM", off-value="PM", :type="`text`", @switch="setTextValue")
+                    .type-btn(@click="toggleCode")
+                        i.fas.fa-code
+                .type-wrapper
+                    .type-title Custom Value Text
+                    .type-desc User use custom String value Data ex) ['YES | NO', 'TRUE | FALSE', 'ON | OFF']
+                    .type-preview(:style="previewSize")
+                        .result {{switchText}} (String)
+                    .type-btn(@click="toggleCode")
+                        i.fas.fa-code
+        .hw-switch-wrapper
+                            hw-switch(v-model="switchData", on-value="AM", off-value="PM", :type="`text`", @switch="setTextValue")
 
 </template>
 

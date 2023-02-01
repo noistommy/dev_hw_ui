@@ -1,7 +1,7 @@
 <template>
     <div class="organization-tree" :class="`level-${level}`">
         <div class="tree-title" :style="{paddingLeft: setLevelIndent+'px'}" :class="{selected: isSelected || header.id === selectedNode}">
-            <div class="arrow-icon" @click.stop="toggleExpand"><i class="gis gi-short-arrow-down"  v-show="treeList.length > 0"></i></div>
+            <div class="arrow-icon" @click.stop="toggleExpand"><i class="fa fa-chevron-down"  v-show="treeList.length > 0"></i></div>
             <div class="title-wrap" @click.stop="selectItem(header)">
                 <span>{{header.attributes.name}}</span>
             </div>

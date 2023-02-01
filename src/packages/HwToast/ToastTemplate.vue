@@ -4,14 +4,14 @@
             <template v-if="!component">
                 <div class="hw-toast-box">
                     <div class="icon-box">
-                        <i class='gis gi-check-circle' v-if="type === 'success'"></i>
-                        <i class='gis gi-exclam-circle rotate-180' v-else-if="type === 'info'"></i>
-                        <i class='gis gi-cancel-alt' v-else-if="type === 'error'"></i>
-                        <i class='gis gi-exclam-circle' v-else-if="type === 'warning'"></i>
+                        <i class='fal fa-circle-check' v-if="type === 'success'"></i>
+                        <i class='fal fa-circle-exclamation rotate-180' v-else-if="type === 'info'"></i>
+                        <i class='fal fa-ban' v-else-if="type === 'error'"></i>
+                        <i class='fal fa-circle-exclamation' v-else-if="type === 'warning'"></i>
                     </div>
                     <p class="toast-text">{{message}}</p>
                     <div class="close-box" @click="removeSelf">
-                        <i class='gi gi-cancel'></i>
+                        <i class='fa fa-xmark'></i>
                     </div>
                 </div>
             </template>

@@ -23,8 +23,8 @@
         </div>
         <div class="trans-middle">
             <div class="btn-wrap">
-                <div class="hw-button icon outline"><i class="gi gi-short-arrow-left-alt"></i></div>
-                <div class="hw-button icon outline"><i class="gi gi-short-arrow-right-alt"></i></div>
+                <div class="hw-button icon outline"><i class="fa fa-chevron-left"></i></div>
+                <div class="hw-button icon outline"><i class="fa fa-chevron-right"></i></div>
             </div>
         </div>
         <div class="trans-right">

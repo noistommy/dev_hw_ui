@@ -32,12 +32,11 @@ div.context-menu-view(ref="container")
                     .type-desc {{type.description}}
                     .type-preview(:style="previewSize")
                         .hw-button.icon.circle.hover(@click.stop="showDialog(index, type.placement, 'menu1')", )
-                            i.gis.gi-cog
+                            i.fa.fa-cog
                         .hw-button.icon.circle.hover(@click.stop="showDialog(index, type.placement, 'menu2')", )
-                            i.gis.gi-user
+                            i.fa.fa-user
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -165,8 +164,8 @@ div.context-menu-view(ref="container")
                         id: 0,
                         title: 'group 1',
                         list: [
-                            {option:'item1', commend: 'option1', icon:'gis gi-user'},
-                            {option:'item2', commend: 'option2', icon:'gis gi-manager', children: [ {option:'child-item1', commend: 'option3', icon:'gis gi-user'}, {option:'child-item2', commend: 'option4', icon:'gis gi-user'}]},
+                            {option:'item1', commend: 'option1', icon:'fa fa-user'},
+                            {option:'item2', commend: 'option2', icon:'fa fa-manager', children: [ {option:'child-item1', commend: 'option3', icon:'fa fa-user'}, {option:'child-item2', commend: 'option4', icon:'fa fa-user'}]},
                         ]
                     },
                     {
@@ -191,19 +190,19 @@ div.context-menu-view(ref="container")
                         id: 0,
                         title: '',
                         list: [
-                            {option:'item1', commend: 'option1', icon:'gis gi-user'},
-                            {option:'item2', commend: 'option2', icon:'gis gi-search'},
-                            {option:'item3', commend: 'option3', icon:'gis gi-server'},
-                            {option:'item4', commend: 'option4', icon:'gis gi-undo', children: [
-                                {option:'child-item1', commend: 'option5', icon:'gi gi-archive'},
-                                {option:'child-item2', commend: 'option6', icon:'gi gi-bug', children: [
-                                        {option:'child2-item1', commend: 'option7', icon:'gi gi-clock'},
-                                        {option:'child2-item2', commend: 'option8', icon:'gi gi-cog'},
+                            {option:'item1', commend: 'option1', icon:'fa fa-user'},
+                            {option:'item2', commend: 'option2', icon:'fa fa-search'},
+                            {option:'item3', commend: 'option3', icon:'fa fa-server'},
+                            {option:'item4', commend: 'option4', icon:'fa fa-undo', children: [
+                                {option:'child-item1', commend: 'option5', icon:'fa fa-archive'},
+                                {option:'child-item2', commend: 'option6', icon:'fa fa-bug', children: [
+                                        {option:'child2-item1', commend: 'option7', icon:'fa fa-clock'},
+                                        {option:'child2-item2', commend: 'option8', icon:'fa fa-cog'},
                                     ]},
-                                {option:'child-item3', commend: 'option5', icon:'gi gi-calendar'}
+                                {option:'child-item3', commend: 'option5', icon:'fa fa-calendar'}
                                 ]
                             },
-                            {option:'item6', commend: 'option6', icon:'gis gi-cancel'},
+                            {option:'item6', commend: 'option6', icon:'fa fa-cancel'},
                         ]
                     }
                 ],

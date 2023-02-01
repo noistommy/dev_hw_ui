@@ -1,7 +1,7 @@
 <template>
     <div class="hw-dropdown" :tabindex="type === 'search' ? -1 : 0" :class="[type, {open: isOpen}, {multiple}, {fluid}, align, directPos, {compact}, {icon:icon !== undefined}, {round}, roundSize]" @click="handleClick">
 <!--        dropdown open || close 표시 -->
-        <span class="dropdown-icon" v-if="!input && dropdownArrow"><i :class="`gi gi-short-arrow-${isOpen?'up':'down'}-alt`"></i></span>
+        <span class="dropdown-icon" v-if="!input && dropdownArrow"><i :class="`fa fa-chevron-${isOpen?'up':'down'}-alt`"></i></span>
 <!--        search type -->
         <template v-if="type === 'search'">
             <div class="dropdown-search">
@@ -11,7 +11,7 @@
                         <img :src="selectedItem[imageKey]">
                     </div>
                     {{selectedItem[optionKey]}}
-                    <i class="gi gi-cancel"></i>
+                    <i class="fa fa-cancel"></i>
                 </div>
                 <input type="text" class="searching" v-model="searchText"
                        @input="searchOption"
@@ -21,7 +21,7 @@
                        @compositionend="checkComposition($event,'end')"
                        @compositionstart="checkComposition($event,'start')"
                 >
-                <span class="type-icon" v-if="icon"><i class="gi" :class="`gi-${icon}`"></i></span>
+                <span class="type-icon" v-if="icon"><i class="fa" :class="`fa-${icon}`"></i></span>
             </div>
             <div class="default text" v-if="isEmptyText">{{placeHolder}}</div>
         </template>
@@ -34,7 +34,7 @@
                        @keydown.stop.down.prevent="moveDownItem"
                        @compositionend="checkComposition($event,'end')"
                        @compositionstart="checkComposition($event,'start')">
-                <span class="type-icon" v-if="icon"><i class="gi" :class="`gi-${icon}`"></i></span>
+                <span class="type-icon" v-if="icon"><i class="fa" :class="`fa-${icon}`"></i></span>
             </div>
             <div class="default text" v-if="isEmptyText">{{placeHolder}}</div>
         </template>
@@ -86,7 +86,7 @@
 <!--                    <div class="filter-item all">전체 {{currentIndex}}</div>-->
                     <div class="filter-item" v-for="(filter, index) in filterList" :key="filter.type" :class="{select:currentIndex === index}"
                          @click.stop="requestSearch(index)" @mouseover="currentIndex=index">
-                        <i :class="`gis gi-${filter.icon}`"></i>
+                        <i :class="`fa fa-${filter.icon}`"></i>
                         <span class="filter-type">{{filter.title}}</span>
                         <span class="filter-keyword">{{searchText}}</span>
                     </div>
@@ -100,7 +100,7 @@
                 <div class="multi-selected-list" :class="{onList: selectedList.length > 0}">
                     <div class="btn-apply" v-if="isOpen">
                         <div class="hw-button icon circle small">
-                            <i class="gis gi-cancel"></i>
+                            <i class="fa fa-cancel"></i>
                         </div>
                     </div>
                     <div class="selected-item" :class="{avatar:imageKey}" v-for="item in selectedList" :key="item.id" @click.stop="removeSelect(item)">
@@ -108,7 +108,7 @@
                             <img :src="item[imageKey]">
                         </div>
                         {{item[optionKey]}}
-                        <i class="gi gi-cancel"></i>
+                        <i class="fa fa-cancel"></i>
                     </div>
                 </div>
             </slot>

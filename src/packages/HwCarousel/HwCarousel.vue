@@ -16,14 +16,14 @@
                 <div class="nav-item" v-for="nav in items.length" :key="nav" :class="{active: currentIndex === nav - 1}" @click="setCurrent(nav - 1)"></div>
             </template>
             <template v-if="navType === 'arrow'">
-                <span class="nav-preview-btn" @click="movePrev"><i class="gi gi-short-arrow-left-alt"></i></span>
+                <span class="nav-preview-btn" @click="movePrev"><i class="fa fa-chevron-left"></i></span>
                 <span class="nav-current-count">{{currentIndex + 1}} / {{items.length}}</span>
-                <span class="nav-next-btn" @click="moveNext"><i class="gi gi-short-arrow-right-alt"></i></span>
+                <span class="nav-next-btn" @click="moveNext"><i class="fa fa-chevron-right"></i></span>
             </template>
         </div>
         <div class="controller">
             <div class="control-btn">
-                <i class="gis gi-status"></i>
+                <i class="fa fa-status"></i>
             </div>
         </div>
     </div>

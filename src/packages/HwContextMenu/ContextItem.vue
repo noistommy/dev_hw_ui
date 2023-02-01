@@ -8,7 +8,7 @@
         </div>
         <template v-if="isChildren">
             <div class="item-dropdown-icon" >
-                <i class="gi gi-short-arrow-right-alt"></i>
+                <i class="fa fa-chevron-right"></i>
             </div>
             <div class="child-menu" v-if="isOpen" :class="directionSub">
                 <div class="dialog child" >

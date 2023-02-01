@@ -9,13 +9,13 @@
       </div>
       <a :class="['header-item', 'header-download']" :href="currentFile[downloadKey]" target="_self">
         <span class="header-download-icon">
-            <i class='gi gi-download'></i>
+            <i class='fa fa-download'></i>
         </span>
         <span class="header-download-text">{{languageMap[location].download}}</span>
       </a>
       <div :class="['header-item', 'header-close']" @click.stop="onClose">
         <span class="header-close-icon">
-            <i class='gi gi-cancel'></i>
+            <i class='fa fa-cancel'></i>
         </span>
       </div>
     </div>

@@ -16,7 +16,7 @@
                 </slot>
             </div>
             <span class="check-icon" v-if="isSelectedIcon && selectedItem === item[selectionKey]">
-                <i class="gis gi-check"></i>
+                <i class="fa fa-check"></i>
             </span>
             <div class="btn-set" v-if="withButtons">
                 <slot name="buttonSet" :indexNumber="index"></slot>

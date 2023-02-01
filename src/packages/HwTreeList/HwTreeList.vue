@@ -4,7 +4,7 @@
     <div class="hw-tree-list-title" :class="{selected: selectedNode === treeData.id}">
       <div class="arrow-wrap" :class="[{'expanded': isExpanded}]" :style="{marginLeft: setLevelIndent+'px'}" @click.stop="toggleExpand">
         <slot name="arrow">
-          <i class="gis gi-short-arrow-down"  v-show="isChildren"></i>
+          <i class="fa fa-chevron-down"  v-show="isChildren"></i>
         </slot>
       </div>
       <span class="check-icon" @click.stop="toggleCheck">

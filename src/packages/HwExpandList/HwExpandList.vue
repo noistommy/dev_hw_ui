@@ -74,7 +74,7 @@ export default {
             return this.data.content !== undefined && this.data.content.length > 0;
         },
         useOptionIcon() {
-            return this.data.optionIcon || 'gi gi-short-arrow-down-alt'
+            return this.data.optionIcon || 'fa fa-chevron-down'
         },
         useContentScroll() {
             if(this.maxHeight > 0) {

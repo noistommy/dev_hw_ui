@@ -46,19 +46,19 @@ export default {
     },
     createIcon: {
       type: String,
-      default: 'gi gi-plus'
+      default: 'fa fa-plus'
     },
     deleteIcon: {
       type: String,
-      default: 'gi gi-trash'
+      default: 'fa fa-trash'
     },
     editIcon: {
       type: String,
-      default: 'gi gi-pencil'
+      default: 'fa fa-pencil'
     },
     updateIcon: {
       type: String,
-      default: 'gi gi-check'
+      default: 'fa fa-check'
     },
     maxLevel: {
       type: Number,

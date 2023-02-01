@@ -74,18 +74,7 @@
             overflow: hidden;
             //transform: translateX(-20px);
             transition: all 250ms;
-            &.default:before {
-                content: "\e927";
-                font-family: 'gi-icons';
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: -50%;
-                transform-origin: center center;
-                transform: translate(-50%, -50%) rotate(90deg);
-                color: #909090;
-
-            }
+            
             &.stick:before {
                 content: "";
                 position: absolute;

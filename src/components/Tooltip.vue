@@ -39,8 +39,7 @@ div.Tooltip-view
                 .type-preview
                     div.hw-button.secondary(v-hw-tooltip="'standard'") 기본
                 .type-btn(@click="toggleCode")
-                    i.gis.gi-short-arrow-left-alt
-                    i.gis.gi-short-arrow-right-alt
+                    i.fas.fa-code
                 .type-code.panel
                     .panel-header code
                     .panel-body
@@ -55,8 +54,7 @@ div.Tooltip-view
                     div.hw-button.secondary(v-hw-tooltip.left="'left'") Left
                     div.hw-button.secondary(v-hw-tooltip.right="'right'") Right
                 .type-btn(@click="toggleCode")
-                    i.gis.gi-short-arrow-left-alt
-                    i.gis.gi-short-arrow-right-alt
+                    i.fas.fa-code
                 .type-code.panel
                     .panel-header code
                     .panel-body
@@ -70,8 +68,7 @@ div.Tooltip-view
                     div.hw-button.secondary(v-hw-tooltip.bottom.center="'center'") Center
                     div.hw-button.secondary(v-hw-tooltip.bottom.end="'end'") End
                 .type-btn(@click="toggleCode")
-                    i.gis.gi-short-arrow-left-alt
-                    i.gis.gi-short-arrow-right-alt
+                    i.fas.fa-code
                 .type-code.panel
                     .panel-header code
                     .panel-body

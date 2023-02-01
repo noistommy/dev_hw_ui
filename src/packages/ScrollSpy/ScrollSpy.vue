@@ -114,13 +114,14 @@ export default {
     right: 0;
     padding: 30px;
     transform: translate(0, -50%);
+    z-index: 9999;
     .type-nav {
-      background-color: #2985db;
       width: 16px;
       height: 16px;
       border-radius: 50%;
       margin: 10px;
       position: relative;
+      background: #454545;
       border: 1px solid #ffffff;
       opacity: .16;
       span.name {
@@ -168,6 +169,7 @@ export default {
     background-color: #f2f2f2;
     top:0;
     right: 0;
+    z-index: 9999;
   }
 }
 </style>

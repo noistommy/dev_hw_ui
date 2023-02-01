@@ -8,7 +8,7 @@
                :class="{select:(index) === currentIndex}"
                @mouseenter="currentIndex = index"
                @click="selectItem(item)">
-            <span><i class="gi" :class="`gi-mention`"></i></span>
+            <span><i class="fa" :class="`fa-at`"></i></span>
             <span>{{item.name}}</span>
           </div>
         </div>

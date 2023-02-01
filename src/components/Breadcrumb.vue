@@ -1,71 +1,71 @@
 <template lang="pug">
-    div.context-menu-view
-        .contents-detail-view
-            hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
-                span(@click="setContents(tab.key)") {{tab.name}}
-            #HwBreadcrumb.contents-section
-                template(v-if="showInfo")
-                    components(:is="infoComp", :usage="usage", :props-data="propsData", :event-data="eventData")
-                template(v-else)
-                    .section-title Types
-                    .type-wrapper
-                        .type-title 기본
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb(:type="type", :parents-list="parentsLevel", :id-key="`level`" @move="getLink")
-                    .type-wrapper
-                        .type-title 기본 (현재 경로 SLOT)
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb(:type="type", :parents-list="parentsLevel", :active-level="activeLevel", :id-key="`level`")
-                                .slot-title 현재 페이지
-                    .type-wrapper
-                        .type-title 기본 (step mode) :: 추후 따로 모듈로 제작 예정
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb(:type="`stepper`", :parents-list="parentsLevel", :active-level="activeLevel",:id-key="`level`")
-                    .type-wrapper
-                        .type-title 기본 (아이콘)
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :is-icon="true", :id-key="`level`"  @move="getLink")
-                    .type-wrapper
-                        .type-title 기본
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :divider="divider", :id-key="`level`")
-                    .type-wrapper
-                        .type-title 기본 (타이틀 표기 축약)
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb( :parents-list="parentsLevel_long", :active-level="activeLevel", :divider="divider", :id-key="`level`")
-                    .type-wrapper
-                        .type-title 기본 (사용자 구분선 사용)
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :divider="`|`", :id-key="`level`")
-                    .type-wrapper
-                        .type-title 기본 (SLOT 구분선 사용)
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :divider="`|`", :id-key="`level`")
-                                i.gi.gi-short-arrow-right-alt(slot="divider")
-                    .type-wrapper
-                        .type-title 기본
-                        .type-desc
-                        .type-preview(:style="previewSize")
-                            hw-breadcrumb( :parents-list="convertedPath", :display-path="5", :id-key="`level`")
+div.context-menu-view
+    .contents-detail-view
+        hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
+            span(@click="setContents(tab.key)") {{tab.name}}
+        #HwBreadcrumb.contents-section
+            template(v-if="showInfo")
+                components(:is="infoComp", :usage="usage", :props-data="propsData", :event-data="eventData")
+            template(v-else)
+                .section-title Types
+                .type-wrapper
+                    .type-title 기본
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb(:type="type", :parents-list="parentsLevel", :id-key="`level`" @move="getLink")
+                .type-wrapper
+                    .type-title 기본 (현재 경로 SLOT)
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb(:type="type", :parents-list="parentsLevel", :active-level="activeLevel", :id-key="`level`")
+                            .slot-title 현재 페이지
+                .type-wrapper
+                    .type-title 기본 (step mode) :: 추후 따로 모듈로 제작 예정
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb(:type="`stepper`", :parents-list="parentsLevel", :active-level="activeLevel",:id-key="`level`")
+                .type-wrapper
+                    .type-title 기본 (아이콘)
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :is-icon="true", :id-key="`level`"  @move="getLink")
+                .type-wrapper
+                    .type-title 기본
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :divider="divider", :id-key="`level`")
+                .type-wrapper
+                    .type-title 기본 (타이틀 표기 축약)
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb( :parents-list="parentsLevel_long", :active-level="activeLevel", :divider="divider", :id-key="`level`")
+                .type-wrapper
+                    .type-title 기본 (사용자 구분선 사용)
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :divider="`|`", :id-key="`level`")
+                .type-wrapper
+                    .type-title 기본 (SLOT 구분선 사용)
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb( :parents-list="parentsLevel", :active-level="activeLevel", :divider="`|`", :id-key="`level`")
+                            i.fa.fa-chevron-right(slot="divider")
+                .type-wrapper
+                    .type-title 기본
+                    .type-desc
+                    .type-preview(:style="previewSize")
+                        hw-breadcrumb( :parents-list="convertedPath", :display-path="5", :id-key="`level`")
 
-                    //.type-wrapper
-                        .blobs(:class="{active:toggle}", @click="switchBtn")
-                            .blob-left
-                            .switch
-                            .blob-right
-                        svg
-                            filter#gooey
-                                feGaussianBlur(in="SourceGraphic", stdDeviation="10", result="blur")
-                                feColorMatrix(in="blur", mode="matrix", values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7", result="gooey")
-                                feComposite(in="SourceGraphic", in2="gooey", operator="atop")
+                //.type-wrapper
+                    .blobs(:class="{active:toggle}", @click="switchBtn")
+                        .blob-left
+                        .switch
+                        .blob-right
+                    svg
+                        filter#gooey
+                            feGaussianBlur(in="SourceGraphic", stdDeviation="10", result="blur")
+                            feColorMatrix(in="blur", mode="matrix", values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7", result="gooey")
+                            feComposite(in="SourceGraphic", in2="gooey", operator="atop")
 
 </template>
 

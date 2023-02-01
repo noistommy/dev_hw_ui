@@ -1,7 +1,7 @@
 <template>
   <div class="hw-button" :class="[brand, {disabled}, {dropdown},{expanded}, {icon}, {round}, {circle}, {compact}, {outline},{text}, {selected}, {withIcon}, iconPos, size, {fluid}, color, {hover}, {badge:withBadge.count}]"
        @click="onClick" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mouseover="onMouseOver">
-    <i v-if="icon || withIcon" :class="[iconType, `gi-${icon || withIcon}`]"></i>
+    <i v-if="icon || withIcon" :class="[iconType, `fa-${icon || withIcon}`, iconPos]" class="icon"></i>
     {{buttonText}}
     <template v-if="withBadge.count">
       <hw-badge :data="withBadge.count" :offset-x="0" :offset-y="0" :color="color || brand" :invert="true"></hw-badge>
@@ -10,7 +10,7 @@
       <!--            </span>-->
     </template>
     <template v-if="dropdown">
-      <!--            <i class="dropdown-icon gis gi-short-arrow-down"></i>-->
+      <!--            <i class="dropdown-icon fa fa-chevron-down"></i>-->
       <transition name="slide-fade">
         <div class="btn-menu-list" v-if="expanded">
           <div class="btn-menu-item ellipsis" v-for="item in dropData" :key="item.id" @click.stop="selectItem(item)">{{item.option}}</div>
@@ -36,7 +36,7 @@ export default {
     },
     iconType: {
       type: String,
-      default: 'gi'
+      default: 'fa'
     },
     icon: String,
     circle: {
@@ -165,8 +165,7 @@ export default {
     }
     &:after {
       display: none;
-      content: "\e954";
-      font-family: 'gi-icons';
+      
       position: absolute;
       font-size: 0.5em;
       top: 50%;

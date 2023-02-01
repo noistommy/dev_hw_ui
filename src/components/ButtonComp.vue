@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.button-view
+div.button-view
     ScrollSpy(container-key=".button-view", section-key=".type-wrapper", title-key=".type-title", title="Types", @select="setGoto")
     .contents-detail-view
       hw-tab(:tab-list="tabList", v-slot="{tab}", :tab-class="`tab-item`")
@@ -16,8 +16,7 @@
               hw-button(button-text="기본")
               //hw-button(button-text="기본 둥근 버튼", :round="true")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -29,8 +28,7 @@
             .type-preview
               hw-button.angled(v-for="btn in brands", :key="`C${btn.name}`", :brand="btn.name" :button-text="`${btn.text}`")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -44,8 +42,7 @@
             .type-preview
               hw-button(v-for="btn in brands", :key="`C1${btn.name}`", :brand="btn.name" :button-text="`${btn.text}`")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -57,8 +54,7 @@
             .type-preview
               hw-button(v-for="btn in brands", :key="`C2${btn.name}`", :brand="btn.name", disabled, :button-text="`${btn.text}`")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -70,8 +66,7 @@
             .type-preview
               hw-button(v-for="btn in brands", :key="`C3${btn.name}`", :brand="btn.name", :compact="true", :button-text="`${btn.text}`")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -86,8 +81,7 @@
               .line-type
                 hw-button(v-for="color in colorPalette", :key="`C${color}`", :button-text="color" , :outline="true", :color="color")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -98,12 +92,11 @@
             .type-desc Icon Button
             .type-preview
               .solid-type
-                hw-button(v-for="icon in icons", :key="`I${icon.type}`", :icon="icon.icon", icon-type="gis")
+                hw-button(v-for="icon in icons", :key="`I${icon.type}`", :icon="icon.icon", icon-type="fas")
               .line-type
-                hw-button(v-for="icon in icons", :key="`I1${icon.type}`", :icon="icon.icon", icon-type="gi")
+                hw-button(v-for="icon in icons", :key="`I1${icon.type}`", :icon="icon.icon", icon-type="fal")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -114,12 +107,11 @@
             .type-desc Icon Button on Circle
             .type-preview
               .solid-type
-                hw-button(v-for="icon in icons", :key="`I2${icon.type}`", :icon="icon.icon", icon-type="gis", circle)
+                hw-button(v-for="icon in icons", :key="`I2${icon.type}`", :icon="icon.icon", icon-type="fas", circle)
               .line-type
-                hw-button(v-for="icon in icons", :key="`I3${icon.type}`", :icon="icon.icon", icon-type="gi", circle)
+                hw-button(v-for="icon in icons", :key="`I3${icon.type}`", :icon="icon.icon", icon-type="fal", circle)
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -130,12 +122,11 @@
             .type-desc Selected Icon Button
             .type-preview
               .solid-type
-                hw-button(v-for="icon in icons", :key="`I4${icon.type}`", :icon="icon.icon", icon-type="gis", circle, selected)
+                hw-button(v-for="icon in icons", :key="`I4${icon.type}`", :icon="icon.icon", icon-type="fas", circle, selected)
               .line-type
-                hw-button(v-for="icon in icons", :key="`I5${icon.type}`", :icon="icon.icon", icon-type="gi", circle, selected)
+                hw-button(v-for="icon in icons", :key="`I5${icon.type}`", :icon="icon.icon", icon-type="fal", circle, selected)
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -146,12 +137,11 @@
             .type-desc Selected Icon Button
             .type-preview
               .solid-type
-                hw-button(v-for="icon in icons", :key="`I6${icon.type}`", :icon="icon.icon", icon-type="gis", hover)
+                hw-button(v-for="icon in icons", :key="`I6${icon.type}`", :icon="icon.icon", icon-type="fas", hover)
               .line-type
-                hw-button(v-for="icon in icons", :key="`I7${icon.type}`", :icon="icon.icon", icon-type="gi", hover)
+                hw-button(v-for="icon in icons", :key="`I7${icon.type}`", :icon="icon.icon", icon-type="fal", hover)
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -162,12 +152,11 @@
             .type-desc Selected Icon Button
             .type-preview
               .line-type
-                hw-button(v-for="icon in icons", :key="`I8${icon.type}`", :icon="icon.icon", icon-type="gi", hover, :circle="true")
+                hw-button(v-for="icon in icons", :key="`I8${icon.type}`", :icon="icon.icon", icon-type="fal", hover, :circle="true")
               .line-type
-                hw-button(v-for="icon in icons", :key="`I9${icon.type}`", :icon="icon.icon", icon-type="gi", hover)
+                hw-button(v-for="icon in icons", :key="`I9${icon.type}`", :icon="icon.icon", icon-type="fal", hover)
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -178,12 +167,11 @@
             .type-desc Selected Icon Button
             .type-preview
               .line-type
-                hw-button(v-for="icon in icons", :key="`I10${icon.type}`", :icon="icon.icon", icon-type="gi", hover, :circle="true", :outline="true")
+                hw-button(v-for="icon in icons", :key="`I10${icon.type}`", :icon="icon.icon", icon-type="fal", hover, :circle="true", :outline="true")
               .line-type
-                hw-button(v-for="icon in icons", :key="`I11${icon.type}`", :icon="icon.icon", icon-type="gi", hover, :outline="true")
+                hw-button(v-for="icon in icons", :key="`I11${icon.type}`", :icon="icon.icon", icon-type="fal", hover, :outline="true")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -193,11 +181,10 @@
             .type-title Button with Icon
             .type-desc Button with Icon
             .type-preview
-              hw-button(button-text="LEFT", brand="secondary", with-icon="short-arrow-left-alt", icon-pos="left")
-              hw-button(button-text="RIGHT", brand="secondary", with-icon="short-arrow-right-alt", icon-pos="right")
+              hw-button(button-text="LEFT", brand="secondary", with-icon="chevron-left", icon-pos="left")
+              hw-button(button-text="RIGHT", brand="secondary", with-icon="chevron-right", icon-pos="right")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -216,8 +203,7 @@
             .type-preview
               hw-button(v-for="size in sizeList", :key="size", :button-text="size", brand="secondary", :size="size")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -229,8 +215,7 @@
             .type-preview
               hw-button(button-text="Full Size Button", brand="primary", fluid)
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -244,8 +229,7 @@
               hw-button(:button-text="dropdownText", :dropdown="true" , :drop-data="dropMenu", :outline="true", @select="setButtonText")
               hw-button(:button-text="dropdownText", :round='true', :dropdown="true" , :drop-data="dropMenu", :outline="true", @select="setButtonText")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -260,8 +244,7 @@
               hw-button(button-text="MouseLeave", brand="primary", @onleave="buttonClick")
               hw-button(button-text="MouseOver", brand="primary", @onover="buttonClick")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -273,8 +256,7 @@
             .type-preview
               hw-button(v-for="color in colorPalette", :key="`A${color}`", :button-text="color", :color="color")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -289,8 +271,7 @@
               .line-type
                 hw-button(v-for="color in colorPalette", :key="`B${color}`", :button-text="color", :color="color", :text="true")
             .type-btn(@click="toggleCode")
-              i.gis.gi-short-arrow-left-alt
-              i.gis.gi-short-arrow-right-alt
+              i.fas.fa-code
             .type-code.panel
               .panel-header code
               .panel-body
@@ -313,7 +294,7 @@ export default {
       propsData: [
         {name: 'brand', type:'String', default:'', desc: '[primary, secondary, info, danger]' },
         {name: 'disabled', type:'Boolean', default:'false', desc: '버튼 비활성 유무 ' },
-        {name: 'iconType', type:'String', default:'gi', desc: 'GTRIS ICON 타입 [gi, gis]' },
+        {name: 'iconType', type:'String', default:'fa', desc: 'GTRIS ICON 타입 [gi, gis]' },
         {name: 'icon', type:'String', default:'', desc: ' 아이콘 버튼 표출 유무 및 표출 아이콘. GTRIS ICON ' },
         {name: 'circle', type:'Boolean', default:'false', desc: '아이콘 버튼 원형 표출 유무' },
         {name: 'selected', type:'Boolean', default:'false', desc: '선택된 버튼 표시 유무  ' },
@@ -346,22 +327,23 @@ export default {
 
       },
       icons: [
-        {name: '만든 사람',type: 'creator', icon: 'user-check'},
-        {name: '만든 날짜',type: 'cdatetime', icon: 'calendar-check'},
-        {name: '수정한 사람',type: 'modifier', icon: 'user-modify'},
-        {name: '수정한 날짜',type: 'mdatetime', icon: 'date-modify'},
-        {name: '상태',type: 'status', icon: 'status'},
-        {name: '멤버',type: 'member', icon: 'user-group'},
-        {name: '날짜',type: 'datetime', icon: 'calendar'},
-        {name: '라벨',type: 'label', icon: 'tag'},
-        {name: '유형',type: 'type', icon: 'check-circle'},
-        {name: '숫자',type: 'number', icon: 'marker-number'},
-        {name: '텍스트',type: 'text', icon: 'text'},
-        {name: '첨부된 연결',type: 'related', icon: 'connected'},
-        {name: '첨부된 파일',type: 'file', icon: 'paperclip'},
-        {name: '노트',type: 'note', icon: 'text-editor'},
-        {name: '체크',type: 'checkbox', icon: 'check-square'},
-        {name: '링크',type: 'link', icon: 'link'}
+        { name: '만든 사람', type: 'creator', icon: 'user-check' },
+        { name: '만든 날짜', type: 'cdatetime', icon: 'calendar-check' },
+        // {name: '수정한 사람',type: 'modifier', icon: 'user-modify'},
+        { name: '카메라', type: 'media', icon: 'camera' },
+        { name: '설정', type: 'status', icon: 'cog' },
+        { name: '멤버', type: 'member', icon: 'user-group' },
+        { name: '날짜', type: 'datetime', icon: 'calendar' },
+        { name: '라벨', type: 'label', icon: 'tag' },
+        { name: '유형', type: 'type', icon: 'check-circle' },
+        { name: '코멘트', type: 'number', icon: 'comment' },
+        { name: '텍스트', type: 'text', icon: 'text' },
+        { name: '시계', type: 'related', icon: 'clock' },
+        { name: '첨부된 파일', type: 'file', icon: 'paperclip' },
+        { name: '별', type: 'note', icon: 'car' },
+        { name: '체크', type: 'checkbox', icon: 'check-square' },
+        { name: '링크', type: 'link', icon: 'link' },
+        { name: '잠김', type: 'arrow', icon: 'lock' },
       ],
       typeIcons: ['issue', 'wrench', 'browser', 'new', 'cs', 'lock', 'star', 'chart-bar', 'archive', 'security', 'bug', 'exclam-circle', 'plus-square', 'edit-square', 'window-close', 'question-alt', 'important'],
       sizeList: ['tiny', 'small', 'normal', 'large', 'huge'],

@@ -3,7 +3,7 @@
         <div class="date-picker-header" :class="controlAlign" :style="{width: `${datePickerSize}px`, margin: `0 ${extraSize/2}px`}">
             <div class="dp-header">
                     <span class="dp-control to-prev hw-button icon circle" @click="moveMonthDate('prev')" v-if="editable" v-hw-tooltip="prevMonthText[location]">
-                        <i class="gis gi-short-arrow-left-alt"></i>
+                        <i class="fas fa-chevron-left"></i>
                     </span>
                 <slot name="currentDate" :year="currentYear" :month="currentSetMonth">
                     <div class="current-date">
@@ -16,7 +16,7 @@
                 </slot>
 
                 <span class="dp-control to-next hw-button icon circle" @click="moveMonthDate('next')" v-if="editable" v-hw-tooltip="nextMonthText[location]">
-                        <i class="gis gi-short-arrow-right-alt"></i>
+                        <i class="fas fa-chevron-right"></i>
                     </span>
             </div>
             <div class="go-to-now hw-button text" v-show="today" @click="moveMonthDate">{{location === 'en' ? 'Tday' : '오o늘'}}</div>

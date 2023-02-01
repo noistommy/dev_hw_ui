@@ -1,13 +1,13 @@
 <!--<link rel="stylesheet" href="../../assets/scss/base/_colors.scss">-->
 <template>
   <div class="hw-pagination" :class="[`hw-flex-${justify}`]">
-    <button type="button" class="hw-pagination-nav" :disabled="disabledPrev" :class="{'hw-disabled': disabledPrev}"  @click="setPageFirst"><i class="gi gi-double-arrows-left"></i></button>
-    <button type="button" class="hw-pagination-nav" :disabled="disabledPrev"  :class="{'hw-disabled': disabledPrev}" @click="setPagePrev"><i class="gi gi-short-arrow-left-alt"></i></button>
+    <button type="button" class="hw-pagination-nav" :disabled="disabledPrev" :class="{'hw-disabled': disabledPrev}"  @click="setPageFirst"><i class="fa fa-chevrons-left"></i></button>
+    <button type="button" class="hw-pagination-nav" :disabled="disabledPrev"  :class="{'hw-disabled': disabledPrev}" @click="setPagePrev"><i class="fa fa-chevron-left"></i></button>
     <button type="button" class="hw-pagination-num" v-for="(p, index) in paginate" :key="index" :class="{'hw-active':p == currentPage}" @click="setPage(p)">
         {{ p }}
     </button>
-    <button type="button" class="hw-pagination-nav" :disabled="disabledNext" :class="{'hw-disabled': disabledNext}"  @click="setPageNext"><i class="gi gi-short-arrow-right-alt"></i></button>
-    <button type="button" class="hw-pagination-nav" :disabled="disabledNext" :class="{'hw-disabled': disabledNext}" @click="setPageEnd"><i class="gi gi-double-arrows-right" /></button>
+    <button type="button" class="hw-pagination-nav" :disabled="disabledNext" :class="{'hw-disabled': disabledNext}"  @click="setPageNext"><i class="fa fa-chevron-right"></i></button>
+    <button type="button" class="hw-pagination-nav" :disabled="disabledNext" :class="{'hw-disabled': disabledNext}" @click="setPageEnd"><i class="fa fa-chevrons-right" /></button>
   </div>
 </template>
 

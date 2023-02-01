@@ -1,6 +1,6 @@
 <template>
     <div class="time-selector extend">
-        <div class="ts-icon"><i class="gi gi-clock"></i></div>
+        <div class="ts-icon"><i class="fa fa-clock"></i></div>
         <div class="ts-hours">
             <hw-select v-model="hList[0]" :option-list="hList" :key-name="`value`" :option-name="`option`" :type="`float`" :min-width="`4em`" />
 <!--            <div class="select-time-wrap hw-select hw-group icon right" @click="showTimeSelect">-->

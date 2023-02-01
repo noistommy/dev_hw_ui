@@ -3,7 +3,7 @@
 <!--    <label class="label" v-if="labelText !== ''">{{labelText}}</label>-->
 <!--    <template v-if="type === 'input'">-->
 <!--      <div class="input-wrap">-->
-<!--        <i :class="[iconType, `gi-${icon}`]" v-if="icon != undefined" @click="onButtonClick" @keypress.enter.prevent="onEnterUp"></i>-->
+<!--        <i :class="[iconType, fa-${icon}`]" v-if="icon != undefined" @click="onButtonClick" @keypress.enter.prevent="onEnterUp"></i>-->
 <!--        <input class="hw-input" :type="inputType" :readOnly="readOnly" name="hwInput"-->
 <!--               :class="[color, {disabled}, {underline}, {transparent}, size,{editable:editState}]"-->
 <!--               :placeHolder="placeHolder" :value="inputValue" @keydown.enter.prevent="onEnterUp" @input="onInput" @focus="onFocus">-->
@@ -76,7 +76,7 @@ export default {
     },
     iconType: {
       type: String,
-      default: 'gi'
+      default: 'fa'
     },
     icon: String,
     circle: {

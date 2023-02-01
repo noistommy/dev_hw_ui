@@ -17,8 +17,7 @@ div.colors-view
                 .type-preview
                     p(:class="item.ex") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut consequuntur cum cumque doloremque doloribus esse iure laudantium magnam nesciunt placeat provident quibusdam quo, quos repellendus veniam veritatis voluptas voluptates.
                 .type-btn(@click="toggleCode")
-                    i.gis.gi-short-arrow-left-alt
-                    i.gis.gi-short-arrow-right-alt
+                    i.fas.fa-code
                 .type-code.panel
                     .panel-header code
                     .panel-body
@@ -31,8 +30,7 @@ div.colors-view
                 .type-preview
                     p(:class="item.ex") Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 .type-btn(@click="toggleCode")
-                    i.gis.gi-short-arrow-left-alt
-                    i.gis.gi-short-arrow-right-alt
+                    i.fas.fa-code
                 .type-code.panel
                     .panel-header code
                     .panel-body
@@ -48,8 +46,7 @@ div.colors-view
                                 .box-name {{box.name}}
                                 .box-code {{box.value}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -65,8 +62,7 @@ div.colors-view
                                 .box-name {{box.name}}
                                 .box-code {{box.value}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -80,8 +76,7 @@ div.colors-view
                         .palette-wrap
                             .color-palette(v-for="(box, i) in colorPalette", :key="box", :class="['hw', `${box} ${item.ex}`]") {{box}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -95,8 +90,7 @@ div.colors-view
                         .issue-palette-wrap
                             .color-palette(v-for="(box, i) in colorPalette", :key="box", :class="`issue-${item.type}-${box}`", @click="consoleTrigger(box)")
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body

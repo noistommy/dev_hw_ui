@@ -4,7 +4,7 @@
             .contents-section
                 .add-test
                     .hw-button.icon(v-for="color in colorPalette", :key="color", :class="`${color}`", @click="addTags(color)")
-                        i.gis.gi-plus
+                        i.fa.fa-plus
                 .type-wrapper
                     .type-title
                     .type-desc

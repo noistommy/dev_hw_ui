@@ -16,8 +16,7 @@ div.tabs-view
                             span {{tab.name}}
                             span(v-if="tab.count > 0")  ({{tab.count}})
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -34,8 +33,7 @@ div.tabs-view
                         .tab-contents
                             .result-contents {{resultContent}}
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body

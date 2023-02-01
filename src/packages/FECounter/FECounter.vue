@@ -12,8 +12,8 @@ export default {
   data() {
     return {
       counter: 0,
-      leftIcon: 'gis gi-minus',
-      rightIcon: 'gis gi-plus',
+      leftIcon: 'fa fa-minus',
+      rightIcon: 'fa fa-plus',
     }
   },
   props: {
@@ -31,11 +31,11 @@ export default {
     },
     lIcon: {
       type: String,
-      default: 'gis gi-minus'
+      default: 'fa fa-minus'
     },
     rIcon: {
       type: String,
-      default: 'gis gi-plus'
+      default: 'fa fa-plus'
     },
     value: {
       type: [String || Number],

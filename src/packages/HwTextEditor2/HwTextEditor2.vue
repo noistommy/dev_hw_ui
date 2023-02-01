@@ -1,8 +1,8 @@
 <template>
   <div class="text-editor-wrapper">
     <!--        <div class="control-wrapper">-->
-    <!--            <div class="hw-button icon" @click="undo"><i class="gis gi-short-arrow-left"></i></div>-->
-    <!--            <div class="hw-button icon" @click="redo"><i class="gis gi-short-arrow-right"></i></div>-->
+    <!--            <div class="hw-button icon" @click="undo"><i class="fa fa-chevron-left"></i></div>-->
+    <!--            <div class="hw-button icon" @click="redo"><i class="fa fa-chevron-right"></i></div>-->
     <!--        </div>-->
     <div class="floating-panel-wrapper">
       <div class="menu-container" :style="menuPos">
@@ -15,7 +15,7 @@
                :class="{select:(index) === currentIndex}"
                @mouseenter="currentIndex = index"
                @click="setMenuItem(item)">
-            <span><i class="gi" :class="`gi-mention`"></i></span>
+            <span><i class="fa" :class="`fa-at`"></i></span>
             <span>{{item.name}}</span>
           </div>
         </div>

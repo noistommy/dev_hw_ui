@@ -26,7 +26,7 @@
                 </li>
               </ul>
               <div class="toggle-button" @click="setActive">
-                <i class="gis gi-plus"></i>
+                <i class="fa fa-plus"></i>
               </div>
             </div>
           </div>

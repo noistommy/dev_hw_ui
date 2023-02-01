@@ -27,10 +27,10 @@ div.list-view
                                 hw-list(:type="`buttonList`", :list-data="contentData", v-bind="type.option")
                                     template(slot="buttonSet")
                                         .hw-button.icon.circle
-                                            i.gis.gi-check
+                                            i.fa.fa-check
 
                                         .hw-button.icon.circle
-                                            i.gis.gi-cancel
+                                            i.fa.fa-cancel
                             template(v-else-if="type.title === 'Extend List'")
                                 hw-list(:type="`extend`", :list-data="extendData", v-bind="type.option")
                                     template(v-slot="slotProps")
@@ -40,7 +40,7 @@ div.list-view
                                                     template(v-slot="slotProps")
                                                         .icon-title
                                                             span.icon
-                                                                i.gis.gi-chart-bar
+                                                                i.fa.fa-chart-bar
                                                             span {{slotProps.contentText.title}}
                             template(v-else-if="type.title === 'Extend Tree List'")
                                 hw-list(:type="`extend`", :list-data="extendTreeData", v-bind="type.option")
@@ -51,7 +51,7 @@ div.list-view
                                                     template(v-slot="slotProps")
                                                         .icon-title
                                                             span.icon
-                                                                i.gis.gi-chart-bar
+                                                                i.fa.fa-chart-bar
                                                             span {{slotProps.contentText.title}}
                             template(v-else-if="type.title==='Timeline'")
                                 hw-list(:list-data="contentData", v-bind="type.option")
@@ -68,8 +68,7 @@ div.list-view
 
 
                     .type-btn(@click="toggleCode")
-                        i.gis.gi-short-arrow-left-alt
-                        i.gis.gi-short-arrow-right-alt
+                        i.fas.fa-code
                     .type-code.panel
                         .panel-header code
                         .panel-body
@@ -194,22 +193,22 @@ div.list-view
                     {
                         title: "중요 주소록",
                         content: [],
-                        optionIcon: 'gis gi-star',
+                        optionIcon: 'fa fa-star',
 
                     },
                     {
                         title: "개인 주소록",
                         isExpanded: false,
-                        content: [{title: '전체', iconClass: 'gis gi-ellipsis-h'}, {title: '하이웍스 TF', iconClass: 'gis gi-ellipsis-h'}]
+                        content: [{title: '전체', iconClass: 'fa fa-ellipsis-h'}, {title: '하이웍스 TF', iconClass: 'fa fa-ellipsis-h'}]
                     },
                     {
                         title: "공유 주소록",
                         isExpanded: false,
                         content: [
-                            {title: '전체', iconClass: 'gis gi-ellipsis-h'},
-                            {title: '도메인 사업부', iconClass: 'gis gi-ellipsis-h'},
-                            {title: '하이웍스 사업부', iconClass: 'gis gi-ellipsis-h'},
-                            {title: '호스팅/IDC 사업부', iconClass: 'gis gi-ellipsis-h'}
+                            {title: '전체', iconClass: 'fa fa-ellipsis-h'},
+                            {title: '도메인 사업부', iconClass: 'fa fa-ellipsis-h'},
+                            {title: '하이웍스 사업부', iconClass: 'fa fa-ellipsis-h'},
+                            {title: '호스팅/IDC 사업부', iconClass: 'fa fa-ellipsis-h'}
                             ]
                     },
                 ],

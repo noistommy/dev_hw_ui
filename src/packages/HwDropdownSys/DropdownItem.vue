@@ -5,7 +5,7 @@
         </div>
         <slot></slot>
 <!--        <div class="item-check">-->
-<!--            <i class="gis gi-check primary-color"></i>-->
+<!--            <i class="fa fa-check primary-color"></i>-->
 <!--        </div>-->
     </div>
 </template>
@@ -94,8 +94,7 @@
         &.check {
             background-color: #EFEFEF;
             &:after {
-                content: "\e915";
-                font-family: 'gi-icons';
+                content: "";
                 position: absolute;
                 padding: 10px;
                 top:50%;
@@ -114,8 +113,7 @@
             }
             &.select {
                 &:after {
-                    content: "\e915";
-                    font-family: 'gi-icons';
+                    content: "";
                     position: absolute;
                     padding: 10px;
                     top:0;

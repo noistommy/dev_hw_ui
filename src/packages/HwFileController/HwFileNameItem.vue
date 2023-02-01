@@ -12,7 +12,7 @@
         </div>
       </div>
       <span class="remove-btn" @click="removeFile(file.id)">
-        <i class='gi gi-cancel'></i>
+        <i class='fa fa-cancel'></i>
       </span>
     </div>
 </template>
