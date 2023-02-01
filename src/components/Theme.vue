@@ -901,5 +901,8 @@ $thumbInvertedHoverBackground: rgba(255, 255, 255, 0.35);
     }
   }
 }
-
+.hw-grid .column::after {
+  content: '';
+  display: none;
+}
 </style>

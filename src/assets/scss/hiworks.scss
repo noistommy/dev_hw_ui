@@ -25,9 +25,8 @@ $inputPadding: (11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
   display: inline-flex;
   z-index: 10;
   input, textarea {
-    font-family: 'Spoqa Han Sans';
+    font-size: inherit;
     vertical-align: baseline;
-    font-size: 1rem;
     //padding: $verticalInputPadding $horizontalInputPadding;
     padding: $inputPadding;
     line-height: $inputLineHeight + em;
@@ -96,8 +95,23 @@ $inputPadding: (11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
       width: 100%;
     }
   }
-  &.icon {
-    > i.icon {
+  //&.icon {
+  //  > i.icon {
+  //    pointer-events: none;
+  //    position: absolute;
+  //    top: 0;
+  //    height: 100%;
+  //    width: relativePx(38);
+  //    text-align: center;
+  //    opacity: .5;
+  //    &:before {
+  //      position: absolute;
+  //      left: 50%;
+  //      top: 50%;
+  //      transform: translate(-50%, -50%);
+  //    }
+  //  }
+    i.icon {
       pointer-events: none;
       position: absolute;
       top: 0;
@@ -105,6 +119,7 @@ $inputPadding: (11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
       width: relativePx(38);
       text-align: center;
       opacity: .5;
+
       &:before {
         position: absolute;
         left: 50%;
@@ -126,7 +141,6 @@ $inputPadding: (11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
         cursor: pointer;
       }
     }
-  }
   &.labeled {
     .hw-label {
       font-family: 'Spoqa Han Sans';
@@ -639,7 +653,9 @@ $labelColors: (
     border: 1px solid $borderColor;
     //color: $borderColor;
   }
-
+  .hw-input.#{$color} input {
+    color: $bgColor
+  }
 }
 
 

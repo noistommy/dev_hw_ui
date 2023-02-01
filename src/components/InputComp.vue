@@ -315,7 +315,7 @@ div.input-view
     .type-preview.color {
         display: flex;
         flex-wrap: wrap;
-        height: 350px;
+        gap: 10px;
     }
     .user-error {
         position: absolute;

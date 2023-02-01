@@ -91,6 +91,7 @@ body {
 .main-menu {
   min-width: 276px;
   max-width: 484px;
+  border-right: 1px solid #d6d6d6;
   &.hide {
     min-width: 0;
     width: 0;
@@ -100,7 +101,6 @@ body {
   height: 100%;
   flex-grow: 1;
   overflow: hidden;
-  border-left: 1px solid #d6d6d6;
   .contents-header {
     height: 140px;
     padding: 25px;

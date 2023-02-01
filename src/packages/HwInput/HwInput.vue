@@ -22,7 +22,7 @@
 <!--      <slot name="error_message"></slot>-->
 <!--    </template>-->
 <!--  </div>-->
-  <div class="hw-input" :class="[{inline}, {button}, {fluid}, iconPos]">
+  <div class="hw-input" :class="[{inline}, {button}, {fluid}, iconPos, color, size]">
     <template v-if="type === 'input'">
       <input type="text" :placeholder="placeHolder" :disabled="disabled" :readonly="readOnly" :class="[{disabled}, {underline}, {transparent}]">
       <i v-if="icon !== undefined && !button" :class="`icon fa fa-${icon}`"></i>

@@ -1,8 +1,9 @@
 <template lang="pug">
   .menu-wrapper
     .menu-header
-      .title
-        router-link(:to="{path: '/'}") Gabia UI
+      FullMoon
+      .title.h1
+        router-link(:to="{path: '/'}") Hw UI...
     .menu-contents
       .menu-part(v-for="part in menuArr", :key="part.title")
         .part-title {{part.title}}
@@ -14,17 +15,20 @@
 </template>
 
 <script>
+import FullMoon from "../components/CSSDraw/FullMoon";
 export default {
   name: 'main-menu',
+  components: {FullMoon},
   data () {
     return {
       activeMenu: 'Calendar',
       menuArr: [
         {
-          title: 'Global',
+          title: 'Foundation',
           list: [
             {name:'Theme', path: '/theme'},
             {name:'Colors', path: '/colors'},
+            {name:'ColorPalette', path: '/color-palette'},
             {name:'Button', path: '/buttons'},
             {name:'Input', path: '/input'},
             {name:'Layout', path:'/layout'},
@@ -32,9 +36,6 @@ export default {
             {name:'Grid', path:'/grid'},
             {name:'Form', path:'/form'},
             {name:'GridComp', path:'/vue_grid'},
-            {name:'CssDraw', path:'/css_draw'},
-            {name:'Charts', path:'/charts'},
-            {name:'Scrollspy', path:'/scrollspy'},
           ]
         },
         {
@@ -69,8 +70,7 @@ export default {
             {name:'ColumnView', path:'/column_view'},
             {name:'Carousel', path:'/carousel_view'},
             {name:'Slider', path:'/slider'},
-            {name:'GooeyEffect', path:'/gooey_effect'},
-
+            {name:'Scrollspy', path:'/scrollspy'},
           ]
         },
         {
@@ -105,7 +105,14 @@ export default {
           list: [
             {name:'Navigation', path: '/template/navigation'},
             {name:'Transfer', path: '/template/transfer'},
-            //{name:'Finder', path: '/template/finder'},
+          ]
+        },
+        {
+          title: 'Etc',
+          list: [
+            {name:'CssDraw', path:'/css_draw'},
+            {name:'Charts', path:'/charts'},
+            {name:'GooeyEffect', path:'/gooey_effect'},
           ]
         },
 
@@ -127,22 +134,26 @@ export default {
 .menu-wrapper {
   width: 100%;
   height: 100vh;
-  padding: 30px;
   overflow-y: auto;
   .menu-header {
     border-bottom: 1px solid #d6d6d6;
     .title {
-      font-size: 2em;
-      font-weight: 500;
-      margin-top: 10px;
-      margin-bottom: 5px;
+      //font-size: 2em;
+      //font-weight: 500;
+      margin-bottom: 10px;
+      text-align: right;
+      a {
+        font-weight: bold;
+      }
     }
   }
   .menu-contents {
+    padding: 30px 0;
     .menu-part {
       padding: 20px 0;
       .part-item {
         cursor: pointer;
+        padding: 0 20px;
         &:hover {
           background-color: #f8f8f8;
         }
@@ -163,7 +174,7 @@ export default {
       .part-title {
         font-size: 12px;
         color: #909090;
-        padding: 5px;
+        padding: 5px 10px;
       }
     }
     .partition {

@@ -10,23 +10,6 @@ div.colors-view
                         .panel-body
                             p.huge.strong 맑은 고딕 Malgun Gothic
         .contents-section
-            .type-title TEST
-            .type-preview
-                .palette-title Primary
-                .palette-wrap
-                    .color-palette.primary
-                    .color-palette.primary.dark
-                    .color-palette.primary.darken
-                .palette-title Secondary
-                .palette-wrap
-                    .color-palette.secondary
-                    .color-palette.secondary.dark
-                .palette-title Grayscale
-                .palette-wrap
-                    .color-palette.grayscale
-                    .color-palette.grayscale.gray1
-                    .color-palette.grayscale.gray2
-                    .color-palette.grayscale.gray3
             .title Typography[Weight]
             .type-wrapper(v-for="(item, index) in typoData[0].data", :key="`brand_${index}`")
                 .type-title {{item.name}}
@@ -185,7 +168,7 @@ div.colors-view
                 ],
                 colorPaletteData: [
                     {name: 'Background', ex: 'light', code: '<div class="hw {color} light">{color}</div>'},
-                    {name: 'Border & Line', ex: '',code: '<div class="hw {color}">{color}</div>'},
+                    // {name: 'Border & Line', ex: '',code: '<div class="hw {color}">{color}</div>'},
                     {name: 'Text', ex: 'shape', code: '<div class="hw {color} shape">{color}</div>'}
                 ],
                 issueColorPalette: [

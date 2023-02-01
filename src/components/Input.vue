@@ -71,8 +71,8 @@
               .hw-input
                 textarea(placeholder="PlaceHolder", :class="item.ex")
             template(v-if="item.type==='size'")
-              .hw-input.inline(v-for="size in sizeList", :key="size")
-                input(:placeholder="size", :class="size")
+              .hw-input.inline(v-for="size in sizeList", :key="size" :class="size")
+                input(:placeholder="size")
             template(v-if="item.type==='transparent'")
               .hw-input.inline
                 input(:placeholder="item.type", :class="item.ex")

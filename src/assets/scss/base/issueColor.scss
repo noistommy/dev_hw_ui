@@ -98,10 +98,10 @@ $issueContentsColors: (
       background-color: #{darken($colorValue, 20)}
     }
   }
-  .hw-input.#{$colorName} {
+  .hw-input.#{$colorName} > input {
     color: #{$colorValue} !important;
   }
-  .hw-input.#{$colorName}:focus {
+  .hw-input.#{$colorName} > input:focus {
     border-color: #{$colorValue} !important;
   }
   .hw-badge.#{$colorName} {
