@@ -1,8 +1,8 @@
 <template>
     <div class="home contents-detail-view">
-        <div class="h1">
-            <router-link :to="`./color_generator`">스타일 가이드 분석 및 참고 자료</router-link>
-        </div>
+<!--        <div class="h1">-->
+<!--            <router-link :to="`./color_generator`">스타일 가이드 분석 및 참고 자료</router-link>-->
+<!--        </div>-->
         <div class="type-wrapper">
             <div class="type-title">Color Palette</div>
             <div class="type-preview">
@@ -30,7 +30,6 @@
             <div class="type-title">ee</div>
             <div class="type-preview">
                 <div class="type-contents inline">
-<!--                    <div class="content-card gray-50"></div>-->
                     <div class="content-card gray-100">100</div>
                     <div class="content-card gray-200">200</div>
                     <div class="content-card gray-500">500</div>

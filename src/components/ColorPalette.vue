@@ -124,9 +124,9 @@ $baseColors: (
   @each $color, $value in $baseColors {
     $value: getBase($value);
     $maxVar: 36;
-    $mid: $variations / 2;
+    $mid: calc($variations / 2);
     $dist: $mid - 1;
-    $step: $maxVar / $dist;
+    $step: calc($maxVar / $dist);
 
     // lighten and darken
     @for $i from 1 through $dist {
@@ -143,7 +143,7 @@ $baseColors: (
 
     // middle eg 500
     $colors: map-merge($colors, (#{$color}-50: lighten($value, 42)));
-    $colors: map-merge($colors, (#{$color}-#{$variations/2*100}: $value));
+    $colors: map-merge($colors, (#{$color}-#{calc($variations/2)*100}: $value));
 
   }
   @return $colors;

@@ -2,10 +2,10 @@ $white: #FFFFFF;
 $black: #333333;
 
 @function relativePx($number) {
-  @return ($number/14)+em
+  @return calc($number/14)+em
 }
 @function absolutePx($number) {
-  @return ($number/14)+rem
+  @return calc($number/14)+rem
 }
 
 // ----------------------------
@@ -76,12 +76,12 @@ $baseBorderRadius: 4px;
 //$large-size: 1.25em;
 //$huge-size: 1.5em;
 
-$tinySize: (10 / 14);
-$smallSize: (12 / 14);
-$mediumSize: (14 / 14);
-$largeSize: (18 / 14);
-$hugeSize: (20 / 14);
-$massiveSize: (24 / 14);
+$tinySize: calc(10 / 14);
+$smallSize: calc(12 / 14);
+$mediumSize: calc(14 / 14);
+$largeSize: calc(18 / 14);
+$hugeSize: calc(20 / 14);
+$massiveSize: calc(24 / 14);
 
 // ----------------------------
 //         Heading

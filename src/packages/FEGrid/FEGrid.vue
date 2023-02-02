@@ -72,23 +72,23 @@ $gridGutter: 4;
     &.right-side .column:last-child {flex-grow: 1}
     &.divide {
       @for $i from 1 through $gridWhole {
-        &-#{$i} > .column{width: 100% / $i}
+        &-#{$i} > .column{width: calc(100% / $i)}
         //@if $gridWhole % $i == 0 {
         //
         //}
       }
     }
     &.divide {
-      > .column{width: (100% / 12);}
-      &.one > .column{width: (100% / 1);}
-      &.half > .column{width: (100% / 2);}
-      &.third > .column{width: (100% / 3);}
-      &.quarter > .column{width: (100% / 4);}
-      &.fifth > .column{width: (100% / 5);}
-      &.sixth > .column{width: (100% / 6);}
-      &.eighth > .column{width: (100% / 8);}
-      &.tenth > .column{width: (100% / 10);}
-      &.eleventh > .column{width: (100% / 11);}
+      > .column{width: calc(100% / 12);}
+      &.one > .column{width: calc(100% / 1);}
+      &.half > .column{width: calc(100% / 2);}
+      &.third > .column{width: calc(100% / 3);}
+      &.quarter > .column{width: calc(100% / 4);}
+      &.fifth > .column{width: calc(100% / 5);}
+      &.sixth > .column{width: calc(100% / 6);}
+      &.eighth > .column{width: calc(100% / 8);}
+      &.tenth > .column{width: calc(100% / 10);}
+      &.eleventh > .column{width: calc(100% / 11);}
     }
     &.justify {
       &-left{justify-content: flex-start;}

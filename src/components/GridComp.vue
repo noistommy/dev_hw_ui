@@ -190,14 +190,14 @@ $gridWhole: 12;
 $gridWholeMobile: 4;
 $gridWholeTablet: 8;
 $gridWholeLaptop: 12;
-$gridPercent: 100 / $gridWhole;
-$gridHalf: $gridWhole / 2;
-$gridThird: $gridWhole / 3;
-$gridQuarter: $gridWhole / 4;
-$gridFifth: $gridWhole / 5;
-$gridSixth: $gridWhole / 6;
-$gridEighth: $gridWhole / 8;
-$gridTenth: $gridWhole / 10;
+$gridPercent: calc(100 / $gridWhole);
+$gridHalf: calc($gridWhole / 2);
+$gridThird: calc($gridWhole / 3);
+$gridQuarter: calc($gridWhole / 4);
+$gridFifth: calc($gridWhole / 5);
+$gridSixth: calc($gridWhole / 6);
+$gridEighth: calc($gridWhole / 8);
+$gridTenth: calc($gridWhole / 10);
 $gridGutter: 4;
 
 .grid-container {

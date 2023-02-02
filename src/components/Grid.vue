@@ -142,7 +142,7 @@ $gridGutterSmall: 10;
     grid-template-columns: repeat($gridWhole, 1fr);
     @for $i from 1 through $gridWhole {
       &-#{$i} {
-        grid-template-columns: repeat($i, $gridWhole / $i * 1fr);
+        grid-template-columns: repeat($i, calc($gridWhole / $i) * 1fr);
       }
       // reject: span {n} 정수값만 지원
       //&-#{$i} > .column {

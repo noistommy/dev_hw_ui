@@ -115,8 +115,8 @@
     );
     $baseSpeed: 2;
     $speedType: (
-            'very-fast': $baseSpeed/4,
-            'fast': $baseSpeed/2,
+            'very-fast': calc($baseSpeed/4),
+            'fast': calc($baseSpeed/2),
             'normal': $baseSpeed,
             'slow': $baseSpeed*2,
             'very-slow':$baseSpeed*4

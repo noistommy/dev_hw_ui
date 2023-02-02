@@ -39,12 +39,12 @@
         margin-right: -5px;
         &.divide {
             .card-column {padding: 5px}
-            &-1 > .card-column {width: (100% / 1)}
-            &-2 > .card-column {width: (100% / 2)}
-            &-3 > .card-column {width: (100% / 3)}
-            &-4 > .card-column {width: (100% / 4)}
-            &-5 > .card-column {width: (100% / 5)}
-            &-6 > .card-column {width: (100% / 6)}
+            &-1 > .card-column {width: calc(100% / 1)}
+            &-2 > .card-column {width: calc(100% / 2)}
+            &-3 > .card-column {width: calc(100% / 3)}
+            &-4 > .card-column {width: calc(100% / 4)}
+            &-5 > .card-column {width: calc(100% / 5)}
+            &-6 > .card-column {width: calc(100% / 6)}
 
         }
     }

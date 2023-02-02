@@ -1,18 +1,20 @@
 @charset "utf-8";
 
+@use "sass:math";
+
 $horizontalInputPadding: 1em;
-$verticalInputPadding: (11 / 14)+em;
+$verticalInputPadding: calc(11 / 14)+em;
 $horizontalPadding: 1.5em;
 $verticalPadding: $verticalInputPadding;
 $comportHorizontalPadding: $horizontalPadding*0.75;
-$comportVerticalPadding: (11/14) * 0.75em;
+$comportVerticalPadding: calc(11 / 14) * 0.75em;
 //$baseBorderRadius: (30 / 14)+em;
-$baseBorderRadius: (0 / 14)+em;
-$inputLineHeight: (17 / 14);
+$baseBorderRadius: calc(0 / 14)+em;
+$inputLineHeight: calc(17 / 14);
 
-$lineHeightOffset:(( $inputLineHeight - 1) / 2);
+$lineHeightOffset:(( $inputLineHeight - 1) * 0.5);
 
-$inputPadding: (11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
+$inputPadding: calc(11 / 14) - $lineHeightOffset + em $horizontalInputPadding;
 
 .circle {
   border-radius: 50%;
@@ -742,14 +744,14 @@ $gridWhole: 12;
 $gridWholeMobile: 4;
 $gridWholeTablet: 8;
 $gridWholeLaptop: 12;
-$gridPercent: 100 / $gridWhole;
-$gridHalf: $gridWhole / 2;
-$gridThird: $gridWhole / 3;
-$gridQuarter: $gridWhole / 4;
-$gridFifth: $gridWhole / 5;
-$gridSixth: $gridWhole / 6;
-$gridEighth: $gridWhole / 8;
-$gridTenth: $gridWhole / 10;
+$gridPercent: math.div(100, $gridWhole);
+$gridHalf: $gridWhole * 0.5;
+$gridThird: math.div($gridWhole, 3);
+$gridQuarter: $gridWhole * 0.25;
+$gridFifth: $gridWhole * 0.2;
+$gridSixth: math.div($gridWhole, 6);
+$gridEighth: $gridWhole * 0.125;
+$gridTenth: $gridWhole * 0.1;
 $gridGutter: 10;
 
 $bp-mobile: 320px;
@@ -792,7 +794,7 @@ $bp-desktop: 1440px;
   > .column {
     padding-left: calc(var(--gutter) * 1px);
     padding-right: calc(var(--gutter) * 1px);
-    width: (100% / $gridWhole);
+    width: math.div(100%, $gridWhole);
     &.two {
       width: $gridPercent * 2%
     }
@@ -851,29 +853,29 @@ $bp-desktop: 1440px;
   &.left-side > .column:last-child {flex-grow: 1}
   &.right-side > .column:first-child {flex-grow: 1}
   &.divide {
-    &.one > .column{width: (100% / 1);}
-    &.half > .column{width: (100% / 2);}
-    &.third > .column{width: (100% / 3);}
-    &.quarter > .column{width: (100% / 4);}
-    &.fifth > .column{width: (100% / 5);}
-    &.sixth > .column{width: (100% / 6);}
-    &.eighth > .column{width: (100% / 8);}
-    &.tenth > .column{width: (100% / 10);}
+    &.one > .column{width: math.div(100%, 1);}
+    &.half > .column{width: (100% * 0.5);}
+    &.third > .column{width: math.div(100%, 3);}
+    &.quarter > .column{width: (100% * 0.25);}
+    &.fifth > .column{width: (100% * 0.2);}
+    &.sixth > .column{width: math.div(100%, 6);}
+    &.eighth > .column{width: (100% * 0.125);}
+    &.tenth > .column{width: (100% * 0.1);}
   }
   &.divide {
     &-1 > .column{width: 100%;}
-    &-2 > .column{width: (100% / 2);}
-    &-3 > .column{width: (100% / 3);}
-    &-4 > .column{width: (100% / 4);}
-    &-5 > .column{width: (100% / 5);}
-    &-6 > .column{width: (100% / 6);}
-    &-7 > .column{width: (100% / 7);}
-    &-8 > .column{width: (100% / 8);}
-    &-9 > .column{width: (100% / 9);}
-    &-10 > .column{width: (100% / 10);}
-    &-11 > .column{width: (100% / 11);}
-    &-12 > .column{width: (100% / 12);}
-    &-13 > .column{width: (100% / 13);}
+    &-2 > .column{width: (100% * 0.5);}
+    &-3 > .column{width: math.div(100%, 3);}
+    &-4 > .column{width: (100% * 0.25);}
+    &-5 > .column{width: (100% * 0.2);}
+    &-6 > .column{width: math.div(100%, 6);}
+    &-7 > .column{width: math.div(100%, 7);}
+    &-8 > .column{width: (100% * 0.125);}
+    &-9 > .column{width: math.div(100%, 9);}
+    &-10 > .column{width: (100% * 0.1);}
+    &-11 > .column{width: math.div(100%, 11);}
+    &-12 > .column{width: math.div(100%, 12);}
+    &-13 > .column{width: math.div(100%, 13);}
   }
   &.align {
     &-top{align-items: flex-start !important;}

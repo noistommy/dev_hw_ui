@@ -425,10 +425,10 @@ export default {
 
 <style lang="scss" scoped>
 @function relativePx($number) {
-  @return ($number/14)+em
+  @return calc($number/14)+em
 }
 @function absolutePx($number) {
-  @return ($number/14)+rem
+  @return calc($number/14)+rem
 }
 
 
@@ -517,13 +517,13 @@ $h4: absolutePx(16);
 $h5: absolutePx(14);
 
 //Size
-$tinySize: (10 / 14);
-$smallSize: (13 / 14);
-$normalSize: (14 / 14);
-$mediumSize: (16 / 14);
-$largeSize: (18 / 14);
-$hugeSize: (20 / 14);
-$massiveSize: (24 / 14);
+$tinySize: calc(10 / 14);
+$smallSize: calc(13 / 14);
+$normalSize: calc(14 / 14);
+$mediumSize: calc(16 / 14);
+$largeSize: calc(18 / 14);
+$hugeSize: calc(20 / 14);
+$massiveSize: calc(24 / 14);
 
 //$tiny-size: 0.5em;
 //$small-size: 0.75em;

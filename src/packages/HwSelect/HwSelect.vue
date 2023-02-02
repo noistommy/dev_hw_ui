@@ -176,7 +176,7 @@ export default {
 <style lang="scss">
 $itemHeight: 37px;
 $horizontalInputPadding: 1em;
-$verticalInputPadding: (11 / 14)+em;
+$verticalInputPadding: calc(11 / 14)+em;
 
 .hw-select-box {
   position: relative;
