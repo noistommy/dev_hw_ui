@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: '/hw_ui',
     pluginOptions: {
         i18n: {
             locale: 'ko-KR',
